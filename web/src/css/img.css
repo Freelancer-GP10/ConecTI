@@ -1,0 +1,14 @@
+.background-home{
+    background-image: url("../assets/background-index.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Logos */
+.logo-home img{
+    width: 100%;
+    height: 11vh;
+}

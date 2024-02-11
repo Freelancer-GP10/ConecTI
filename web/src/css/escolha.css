@@ -1,0 +1,102 @@
+/* body{
+    background-image: linear-gradient(direction, #50FAAB, #7470B5);
+} */
+
+.body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    height: 100vh;
+    background: rgb(116,112,181);
+    background: linear-gradient(49deg, rgba(116,112,181,1) 0%, rgba(80,250,171,1) 35%, rgba(255,255,255,1) 76%);
+}
+.texto_cadastro{
+    text-align: center;
+    margin-top: 5%;
+
+    background: transparent;
+}
+
+.img-logo{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.cads{
+    background-color: transparent;
+    color: #20497A;
+    text-align: center;
+    font-family: Oxanium;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button11{
+    padding: 16px 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 10vh;
+
+    border-radius: 6px;
+    border: 2px solid #215683;
+    background: transparent;
+}
+.button2{
+    padding: 16px 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 10vh;
+
+    border-radius: 6px;
+    border: 2px solid #215683;
+    background: transparent;
+}
+.button2:hover{
+    padding: 16px 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 6px;
+    border: 2px solid #215683;
+    background: #215683;
+
+    color: #fff;
+}
+.button11:hover{
+    padding: 16px 72px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 6px;
+    border: 2px solid #215683;
+    background: #215683;
+
+    color: #fff;
+}
+.div-button{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 32%;
+    margin-top: 2%;
+
+    background-color: transparent;
+}
+
+.button2{
+    width: 80%;
+}
+.button2 p{
+    margin-left: -30%;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
