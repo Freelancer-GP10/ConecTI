@@ -12,3 +12,57 @@
     width: 100%;
     height: 11vh;
 }
+
+.img-logo-cadastro{
+    width: 20%;
+    height: 11vh;
+
+    margin-left: 2%;
+
+    margin-top: 3%;
+}
+.img-logo-cadastro img{
+    width: 88%;
+    height: 18vh;
+}
+
+.img-logo-cadastro-esquerdo{
+    width: 20%;
+    height: 11vh;
+
+    margin-left:70%;
+    margin-top: 3%;
+}
+.img-logo-cadastro-esquerdo img{
+    width: 88%;
+    height: 18vh;
+}
+
+/* imagens */
+.img-cadastro{
+    background: url("../assets/backgroundTec.png");
+    lighting-color: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 55%;
+    height: 100vh;
+}
+.img-cadastro-freelancer{
+    background: url("../assets/backgroundFreelancer.png");
+    lighting-color: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 55%;
+    height: 100vh;
+}
+.img-cadastro-micro{
+    background: url("../assets/backgroundEmpreendedor.png");
+    lighting-color: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 55%;
+    height: 100vh;
+}

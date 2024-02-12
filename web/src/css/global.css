@@ -39,6 +39,21 @@ a{
     width: 40%;
     height: 10vh;
 }
+.h2-grande-titulo{
+    color: #215683;
+    font-family: Oxanium;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+
+    padding: 0;
+    margin: 0;
+    
+    width: 40%;
+    height: 10vh;
+}
+
 .p-slogan-home{
     color: #FFF;
     text-align: center;
@@ -51,6 +66,16 @@ a{
 .p-12{
     color: #fff;
     font-size: 12px;
+}
+.p-14-azul{
+    color: #215683;
+    font-size: 14px;
+
+    margin-top: 5%;
+}
+.a-14-azul{
+    color: #7dafdb;
+    font-size: 14px;
 }
 .h2-16{
     color: #fff;

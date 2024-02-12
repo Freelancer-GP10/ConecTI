@@ -1,3 +1,4 @@
+import { CadastroFree, CadastroFree2, CadastroMicro, CadastroMicro2 } from "./pages/cadastro.jsx";
 import Institucional from "./pages/conecti.jsx";
 import Contato from "./pages/contato.jsx";
 import { Choose } from "./pages/escolha.jsx";
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
       {/* <RouterProvider router={navegation}/> */}
-      <Contato />
+      <CadastroMicro2 />
     </>
   )
 }
