@@ -88,7 +88,7 @@
     align-items: center;
     justify-content: space-evenly;
 
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 /* teste */
@@ -96,21 +96,14 @@
     display: flex;
     justify-content: space-around;
 
-    margin-top: 10%;
-    width: 80%;
-    margin-left: 10%;
-}
-.cardTeste{
-    background-color: #215683;
-    height: 25vh;
-    width: 50vh;
+    margin-top: 15%;
+    width: 85%;
+    margin-left: 8%;
 
-    border-radius: 8px;
-    /* border: #fff; */
 }
 
 .divTeste{
-    background-color: #215683;
+    background-image: url("../assets/img-workspace.png");
     height: 70vh;
     width: 78%;
 
@@ -118,10 +111,15 @@
 
     margin-left: 11%;
     margin-top: 3%;
+    border: 1px solid #215683;
+}
+.carrosseul-about-home{
+    margin-top: 5%;
 }
 
+
 .plane-home{
-    margin-top: 10%;
+    margin-top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,11 +132,4 @@
     width: 80%;
     margin-top: 5%;
 
-}
-.cardplaneH{
-    background-color: #215683;
-    height: 80vh;
-    width: 25%;
-
-    border-radius: 8px;
 }

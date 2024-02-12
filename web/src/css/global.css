@@ -35,6 +35,9 @@ a{
 
     padding: 0;
     margin: 0;
+    
+    width: 40%;
+    height: 10vh;
 }
 .p-slogan-home{
     color: #FFF;
@@ -44,6 +47,19 @@ a{
     font-style: normal;
     font-weight: 200;
     line-height: normal;
+}
+.p-12{
+    color: #fff;
+    font-size: 12px;
+}
+.h2-16{
+    color: #fff;
+    font-size: 16px;
+}
+
+.alinhamento-inline{
+    display: flex;
+    align-items: center;
 }
 
 /* botoes pradronizados */

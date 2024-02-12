@@ -5,7 +5,10 @@ import "../css/img.css";
 // Imagens
     import imgLogo from "../assets/logo/logo-branca.png";
     import logo from "../assets/logo/logo-grande.png";
-// import { Footer } from "../componentes/footer";
+
+// Componentes
+    import { CardPay, CardService, CardWorkspace, PlaneBasic, PlanePremium, PlaneUltra } from "../componentes/cards";
+import { Footer } from "../componentes/footer";
 
 function Institucional(){
     return(
@@ -45,9 +48,9 @@ function Institucional(){
                 </div>
                 <div className="about-home">
                     <div className="card-about-home">
-                        <div className="cardTeste"></div>
-                        <div className="cardTeste"></div>
-                        <div className="cardTeste"></div>
+                        <CardWorkspace />
+                        <CardService />
+                        <CardPay />
                     </div>
                     <div className="carrosseul-about-home">
                         <div className="divTeste"></div>
@@ -56,12 +59,12 @@ function Institucional(){
                 <div className="plane-home">
                     <h1 className="h1-medio">Nossos Planos</h1>
                     <div className="card-plane-home">
-                        <div className="cardplaneH"></div>
-                        <div className="cardplaneH"></div>
-                        <div className="cardplaneH"></div>
+                        <PlaneBasic />
+                        <PlanePremium />
+                        <PlaneUltra />
                     </div>
                 </div>
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </>
     )

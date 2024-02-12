@@ -11,10 +11,17 @@ footer {
 
     margin-top: 10%;
 }
+.coluna-logo-footer{
 
-.h2-subtitulo2{
-    margin-left: -15%;
-    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-top: 3%;
+}
+
+.h2-slogan-footer{
+    color: #fff;
 }
 
 .colunas {
@@ -41,3 +48,23 @@ footer {
     color: black;
 }
 
+
+.p-footer{
+    margin-top: -5%;
+}
+.alinhamento-p{
+    margin-top: -2%;
+    width: 80%;
+}
+.p-footer-contact{
+    margin-left: 5%;
+}
+.p-footer-contact-t{
+    margin-left: 8%;
+}
+
+.redes-inline{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
