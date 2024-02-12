@@ -7,8 +7,17 @@
     overflow-x: hidden;
 
     height: 100vh;
-    background: rgb(116,112,181);
-    background: linear-gradient(49deg, rgba(116,112,181,1) 0%, rgba(80,250,171,1) 35%, rgba(255,255,255,1) 76%);
+}
+.background{
+    background: rgb(24,11,232);
+    background: linear-gradient(49deg, rgba(24,11,232,0.3757878151260504) 21%, rgba(80,250,171,0.17970938375350143) 55%, rgba(255,255,255,1) 76%);
+
+    height: 100vh;
+}
+
+.span-choose{
+    color: #20497A;
+    font-size: 40px;
 }
 .texto_cadastro{
     text-align: center;
@@ -79,24 +88,18 @@
 
     color: #fff;
 }
-.div-button{
+.div-choose-butons{
+
     display: flex;
-    justify-content: space-between;
+    margin-top: 10%;
+
+    justify-content: space-around;
+    align-items: center;
+
     width: 40%;
-    margin-left: 32%;
-    margin-top: 2%;
-
-    background-color: transparent;
+    margin-left: 30%;
 }
 
-.button2{
-    width: 80%;
-}
-.button2 p{
-    margin-left: -30%;
-}
-
-p{
-    padding: 0;
-    margin: 0;
+.btn-choose-1{
+    width: 30vh;
 }

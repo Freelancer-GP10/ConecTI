@@ -1,26 +1,25 @@
-// import logoimg from "../assets/logo.png";
+import logoimg from "../assets/logo/logo.png";
 import "../css/global.css";
 import "../css/escolha.css";
 
 
-export function Chose() {
+export function Choose() {
 
   return (
     <>
       <div className="background">
-      <a href="./">
-
-        <img src="./" alt="" className="img-logo" />
+        <a href="./">
+          <img src={logoimg} alt="" className="img-logo" />
         </a>
 
         <div className='texto_cadastro'>
 
-        <span> Como você deseja <br />se registrar?</span>
+        <span className="span-choose"> Como você deseja <br />se registrar?</span>
 
 
-          <div className="div-buttons">
-            <a href="/cadastro-previo-freelancer"><button className="btn-padrao">Freelancer</button></a>
-            <a href="/cadastro-previo-empresa"><button className="btn-padrao">Microempreendedor</button></a>
+          <div className="div-choose-butons">
+            <a href="/cadastro-previo-freelancer"><button className="btn-padrao btn-choose-1">Freelancer</button></a>
+            <a href="/cadastro-previo-empresa"><button className="btn-padrao btn-choose-1">Microempreendedor</button></a>
           </div>
 
 
