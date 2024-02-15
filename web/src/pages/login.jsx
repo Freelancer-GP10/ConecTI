@@ -3,7 +3,7 @@ import "../css/global.css";
 import fundologin from "../assets/backgroundTec.png";
 import logopreta from "../assets/logo/logo.png";
 
-// import LoginJS from "../js/login";
+import LoginJS from "../js/login";
 
 export function Login(){
     return(
@@ -29,7 +29,7 @@ export function Login(){
                 </form>
         
                 <h2>Deseja manter logado? <input type="checkbox" id="myCheckbox" className="checkbox" /></h2>
-                <button className="btn-padrao" id="button" /*onClick={LoginJS}*/>Login</button>
+                <button className="btn-padrao" id="button" onClick={LoginJS}>Login</button>
             </div>
                     
           </div>

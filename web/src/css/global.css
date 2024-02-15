@@ -53,6 +53,25 @@ a{
     width: 40%;
     height: 10vh;
 }
+.h2-grande-titulacao{
+    color: #215683;
+    font-family: Oxanium;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    padding: 0;
+    margin: 0;
+    
+    width: 40%;
+    height: 10vh;
+
+    margin-left: 20%;
+    margin-top: 4%;
+
+    position: absolute;
+}
 
 .p-slogan-home{
     color: #FFF;

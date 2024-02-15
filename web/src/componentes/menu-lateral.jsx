@@ -2,6 +2,7 @@ import "../css/global.css";
 import "./css/menu-lateral.css";
 import "../css/img.css";
 import imgLogo from "../assets/logo/logo-branca.png";
+import logOff from "../js/logOf";
 
 export function Menu(){
     return(
@@ -122,7 +123,7 @@ export function Menu(){
                 <p className="p-menu">Suporte</p>
                 </div>
 
-                <div className="logOff">
+                <div className="logOff" onClick={logOff}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path d="M7.87149 22.4306L1.21865 16.0002L7.8731 9.57135" stroke="url(#paint0_diamond_546_257)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M1.21924 16.001H21.8369" stroke="url(#paint1_diamond_546_257)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

@@ -1,21 +1,14 @@
 import {Menu} from "../componentes/menu-lateral";
+import { Perfil } from "../componentes/perfil";
 // import {Perfil} from "../componentes/perfil";
 // import {Pesquisa} from "../componentes/pesquisa";
 
 export function Pay(){
     return(
         <>
-        {/* <MenuLateral />
-
-        <h2 className="h2-title2">Pay</h2>
-
-        <PerfilComponente />
-        <Pesquisa /> */}
-        <Menu />
-        {/* <h2 className="h2-title2">Pay</h2> */}
-        {/* <Perfil />
-        <Pesquisa /> */}
-
+            <Menu />
+                <h2 className="h2-grande-titulacao">Pay</h2>
+                    <Perfil />
         </>
     )
 }

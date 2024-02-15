@@ -6,6 +6,7 @@ export function Service() {
     return(
         <>
             <Menu />
+            <h2 className="h2-grande-titulacao">Service</h2>
             {/* <h2 className="h2-title2">Services</h2>
             <Perfil />
             <Pesquisa />
