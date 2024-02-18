@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.jsx'
-<<<<<<< HEAD
 import { Workspace } from './pages/workspace.jsx'
 import { Servico3 } from './componentes/servicos.jsx'
 
@@ -10,7 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Workspace />
   </React.StrictMode>
 )
-=======
 
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -83,4 +81,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </RouterProvider>
   </React.StrictMode>
 );
->>>>>>> d2900fc7b046e650e2582d3ccaf2e9f36a140dd0
