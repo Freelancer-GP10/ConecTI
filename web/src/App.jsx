@@ -1,18 +1,12 @@
-// const navegation = createBrowserRouter(
-//   [
-//     {
-//       path: "/",
-//       element: <Institucional />,
-//     },
-//   ]
-// )
+import Workspace from "./pages/workspace"
 
 function App() {
 
   return (
     <>
-      {/* <RouterProvider router={navegation}/> */}
-      {/* <Institucional /> */}
+
+    <Workspace />
+
     </>
   )
 }

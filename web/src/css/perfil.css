@@ -1,0 +1,192 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.main-perfil {
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  /* background-color: #fff; */
+  position: relative;
+  overflow: hidden;
+}
+
+.perfil-voltar {
+  color: #2B9DB8;
+  font-size: 18px;
+  font-family: "Oxanium";
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.perfil-voltar::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-bottom: 2px solid #2B9DB8;
+  transition: all 150ms ease-in-out;
+}
+
+.perfil-voltar:hover::before {
+  width: 100%;
+}
+
+.perfil-cima {
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card-perfil {
+  background-color: #155F73;
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  padding: 10px 15px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.perfil-cima {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.perfil-embaixo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 30px;
+}
+
+.perfil-info {
+  align-self: flex-start;
+}
+
+.perfil-icon {
+  /* align-self: flex-end; */
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 27%;
+}
+
+.div-embaixo-left {
+  align-self: flex-start;
+}
+
+.div.div-btn {
+  display: flex;
+}
+.btn-att-baixar{
+  justify-content: space-between;
+  display: flex;
+  width: 40%;
+}
+
+.button-editar {
+  align-self: flex-end;
+  margin-top: 5%;
+  border-radius: 6px;
+  background: #2B9DB8;
+  border-color: #2B9DB8;
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-alinhar{
+  margin-top: -95%;
+  margin-left: 340%;
+}
+
+.button-editar:hover {
+  transform: scale(1.05);
+}
+
+.div-forms{
+  justify-content: space-between;
+  display: flex;
+  width: 50%;
+}
+
+
+
+.perfil-texto {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+  box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+
+}
+
+.btns-embaixo {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #155F73;
+ border-color: #155F73;
+  cursor: pointer;
+  width: 69px;
+  color: #FFF;
+  transition: background-color 0.8s, color 0.4s;
+}
+
+.btns-embaixo:hover{
+  background-color: #FFF; 
+  color: #155F73; 
+
+}
+
+
+/* DADOS PESSOAIS */
+.direita-form {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.20);
+  background: #FFF;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+
+  display: inline-flex;
+  padding: 30px 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.div-input{
+  width: 145%;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #204A7B;
+  background: rgba(230, 244, 246, 0.60);
+  width: 45%;
+  height: 30px;
+
+  margin: 1%;
+  
+}
+select{
+  border-radius: 5px;
+  border: 1px solid #204A7B;
+  background: rgba(230, 244, 246, 0.60);
+  width: 467px;
+  height: 30px;
+}

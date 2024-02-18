@@ -6,6 +6,7 @@ body{
 
     font-family: Oxanium;
     background-color: #fdfdfd;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -101,9 +102,27 @@ a{
     font-size: 16px;
 }
 
+/* alinhamentos */
+
 .alinhamento-inline{
     display: flex;
     align-items: center;
+}
+
+.conteudo-servicos{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    margin-left: 14%;
+}
+
+.alinhamento-itens-conteudo{
+    height: autp;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
 }
 
 /* botoes pradronizados */

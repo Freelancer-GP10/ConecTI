@@ -1,61 +1,16 @@
 .containerServices{
-    position: absolute;
+    /* position: absolute; */
     border: 2px solid #2B9DB8;
     border-radius: 8px;
+
     height: 30vh;
-    width: 77%;
-    margin-top: 12%;
-    margin-left: 18%;
-    padding: 0;
+    width: 95%;
+
+    margin-left: 3%;
+    margin-top: 2%;
+
     display: flex;
-}
-
-.Titulo{
-    color: #000;
-    font-size: 30px;
-    margin-top: 3%;
-    margin-left: 3%;
-    font-family: Oxanium;
-    position: absolute;
-}
-.empresa{
-    margin-left: 3%;
-    margin-top: 8%
-}
-.descricao{
-    margin-left: -12.5%;
-    margin-top: 12%;
-
-}
-.descicaoDemanda{
-    color: #000;
-    font-size: 15px;
-}
-.verMais{
-    position: absolute;
-    border: none;
-    font-size: 15px;
-    color: #2B9DB8;
-    background-color: transparent;
-    margin-left: 21%;
-    margin-top: -3.5%;
-}
-.verMais:hover{
-    background-color: transparent;
-    border: none;
-    color: #2B9DB8;
-}
-
-.valor{
-    /* position: absolute; */
-    font-family: Oxanium;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    color: #12324d;
-
-    margin-top: 3.5%;
-    margin-left: 20%;
+    flex-direction: column;
 }
 
 .option{
@@ -63,82 +18,56 @@
     display: flex;
     width: 8%;
     height: 4vh;
-    /* padding: 10px 24px; */
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    border: none;
     border-radius: 8px;
-    border: 1px solid #12324d;
-
-    font-size: 12px;
-    color: #2E2C2C;
-
-}
-.aceite{
-    margin-top: 8%;
-    margin-left: 85%;
-}
-.recuse{
-    margin-top: 11.5%;
-    margin-left: 85%;
-}
-
-.time{
-    position: absolute;
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-
-    margin-top: 16%;
-    margin-left: 78%;
-}
-.time p{
-    font-size: 12px;
-}
-
-.timeW{
-
-    margin-top: 8%;
-    margin-left: 84%;
 }
 
 .status{
-    border-radius: 8px;
-    border: #2E2C2C;
     background: #50FAAB80;
-
-    margin-top: 3.5%;
-    margin-left: 85%;
+    margin-top: 6%;
+    margin-left: 70%;
 }
-.status:hover{
-    background-color: #50FAAB80;
-    color: #2E2C2C;
-}
-
-.status2{
-    border-radius: 8px;
-    border: #2E2C2C;
-    background: rgba(250, 196, 80, 0.502);
-
-    margin-top: 8%;
-    margin-left: 85%;
-}
-.status2:hover{
-    background: rgba(250, 196, 80, 0.502);
-    color: #2E2C2C;
-}
-.desc2{
-    margin-left: 2%;
-    width: 100%;
+.opt{
+    background: #215683;
+    color: #fff;
+    margin-top: 9%;
+    margin-left: 69%;
+    width: 10%;
 }
 
-.money{
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 13px;
+.Titulo-servico{
+    width: 90%;
+    height: 10vh;
+    color: #215683;
+}
+.titulo-servico-h2{
+    margin-left: 5%;
+}
+
+.descricao-servico{
+    width: 90%;
+    height: 13vh;
+}
+.descicaoDemanda{
+    margin-left: 5%;
+}
+
+.valor-servico{
+    position: absolute;
+    width: 15%;
+
+    margin-top: 3%;
+    margin-left: 70%;
+}
+
+.time-servico{
     height: 5vh;
-    width: 12%;
+    width: 25%;
 
-    margin-top: 15%;
-    margin-left: 21%;
+    margin-left: 75%;
+}
+.time-servico-p{
+    margin-left: 9%;
 }

@@ -1,6 +1,6 @@
 import { Menu } from "../componentes/menu-lateral";
 import { Perfil } from "../componentes/perfil";
-// import { Servico2 } from "../componentes/servicos";
+import { Servico3 } from "../componentes/servicos";
 // import { Perfil } from "../componentes/perfil";
 // import { Pesquisa } from "../componentes/pesquisa";
 // import { Servico2 } from "../componentes/service";
@@ -11,8 +11,13 @@ export function Workspace(){
         <Menu />
         <h2 className="h2-grande-titulacao">Workspace</h2>
         <Perfil />
-        <div className="conteudo">
-            {/* <Servico2 /> */}
+        <div className="conteudo-servicos">
+            <div className="alinhamento-itens-conteudo">
+            <Servico3 />
+            <Servico3 />
+            <Servico3 />
+            <Servico3 />
+            </div>
         </div>
         </>
     )
