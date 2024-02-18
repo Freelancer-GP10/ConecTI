@@ -37,6 +37,21 @@
     width: 10%;
 }
 
+.optt{
+    background: #215683;
+    color: #fff;
+    margin-top: 6.5%;
+    margin-left: 69%;
+    width: 10%;
+}
+.optt2{
+    background: #215683;
+    color: #fff;
+    margin-top: 9%;
+    margin-left: 69%;
+    width: 10%;
+}
+
 .Titulo-servico{
     width: 90%;
     height: 10vh;
@@ -70,4 +85,15 @@
 }
 .time-servico-p{
     margin-left: 9%;
+}
+
+.money{
+    position: absolute;
+    width: 9%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 69.5%;
+    margin-top: 2%;
 }

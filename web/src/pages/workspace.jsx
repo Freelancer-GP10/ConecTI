@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Menu } from "../componentes/menu-lateral";
 import { Perfil } from "../componentes/perfil";
-import { Servico3 } from "../componentes/servicos";
+import { Servico2 } from "../componentes/servicos";
 // import { Perfil } from "../componentes/perfil";
 // import { Pesquisa } from "../componentes/pesquisa";
 // import { Servico2 } from "../componentes/service";
@@ -15,10 +15,10 @@ export function Workspace(){
         <Perfil />
         <div className="conteudo-servicos">
             <div className="alinhamento-itens-conteudo">
-            <Servico3 />
-            <Servico3 />
-            <Servico3 />
-            <Servico3 />
+            <Servico2 />
+            <Servico2 />
+            <Servico2 />
+            <Servico2 />
             </div>
         </div>
         </>

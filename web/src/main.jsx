@@ -1,14 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
-import { Workspace } from './pages/workspace.jsx'
-import { Servico3 } from './componentes/servicos.jsx'
+// import React from 'react'
+// import ReactDOM from 'react-dom/client'
+// // import App from './App.jsx'
+// import { Workspace } from './pages/workspace.jsx'
+// import Service from './pages/service.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Workspace />
-  </React.StrictMode>
-)
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <React.StrictMode>
+//     <Service />
+//   </React.StrictMode>
+// )
 
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -79,5 +80,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <RouterProvider router={router}>
 
     </RouterProvider>
+    <Workspace />
   </React.StrictMode>
 );
