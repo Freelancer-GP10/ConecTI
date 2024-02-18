@@ -3,12 +3,9 @@ import "../css/global.css";
 import instace from "../js/instance";
 import atualizarMicro from "../js/atualizarEmpresa";
 import React, { useState, useEffect } from 'react';
-
-import  deletarMicro from "../js/deletarMicro";
-
 import { Menu } from "../componentes/menu-lateral";
 import editicon from "../assets/edit.png"
-import { Quadrados4 } from "../componentes/quadrados";
+import deletarFreelancer from "../js/deletarFreelancer";
 
 export default function PerfilMicro() {
     console.log("PERFILMICRO");
@@ -21,7 +18,7 @@ export default function PerfilMicro() {
           const response = await instace.get('usuarios/detalhes-micro');
           setUserData(response.data);
         } catch (error) {
-          console.error('Erro ao obter detalhes do freelancer:', error);
+          console.error('Erro ao obter detalhes do microempreendedor:', error);
         }
       };
   
@@ -32,7 +29,6 @@ export default function PerfilMicro() {
     return (
       <>
         <Menu />
-        <Quadrados4 />
   
   
   
@@ -109,23 +105,23 @@ export default function PerfilMicro() {
   
                   <div className="div-input">
   
-                    <input className="ipt-perfil" type="text" placeholder='Nome empresa' id='in_nameempresa' />
+                    <input className="ipt-perfil ipt-perfil-micro " type="text" placeholder='Nome empresa' id='in_nameempresa' />
   
-                    <input className="ipt-perfil" type="text" placeholder='CNPJ' id='in_cnpj' />
+                    <input className="ipt-perfil ipt-perfil-micro" type="text" placeholder='CNPJ' id='in_cnpj' />
                   </div>
                   <div className="div-input row">
   
-                    <input className="ipt-perfil-micro" type="text" placeholder='Telefone' id='in_phonemicro' />
+                    <input className="ipt-perfil ipt-perfil-micro" type="text" placeholder='Telefone' id='in_phonemicro' />
                   </div>
   
                   <div className="div-input">
-                    <input className="ipt-perfil-micro" type="email" placeholder='E-mail' id="in_emailMicro" />
-                    <input className="ipt-perfil-micro" type="email" placeholder='Senha' id="in_senhaMicro" />
+                    <input className="ipt-perfil ipt-perfil-micro" type="email" placeholder='E-mail' id="in_emailMicro" />
+                    <input className="ipt-perfil ipt-perfil-micro" type="email" placeholder='Senha' id="in_senhaMicro" />
                   </div>
                 </div>
   
   
-                <select id="in_ramos" name="ramos">
+                <select className="select-perfil-micro" id="in_ramos" name="ramos">
                   <option value="">-- Selecione um ramo--</option>
                   <option value="restaurantes">Restaurantes e Cafeterias</option>
                   <option value="vestuario">Lojas de Vestuário e Acessórios</option>
@@ -146,8 +142,8 @@ export default function PerfilMicro() {
                 <div className="div-forms">
   
                   <button className="btns-embaixo" id="btn-salvar"onClick={atualizarMicro}>Salvar</button>
-  
-                  <button className="btns-embaixo" id="btn-excluir" onClick={deletarMicro}>Excluir</button>
+                  <button className="btns-embaixo" id="btn-cancelar">Cancelar</button>
+                  <button className="btns-embaixo" id="btn-excluir" onClick={deletarFreelancer}>Excluir</button>
   
                 </div>
   

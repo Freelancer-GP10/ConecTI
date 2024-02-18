@@ -1,16 +1,33 @@
 import "../css/perfil.css";
 import "../css/global.css";
-import React, { useState } from 'react';
 import { Menu } from "../componentes/menu-lateral";
 import editicon from "../assets/edit.png"
-import { Quadrados4 } from "../componentes/quadrados";
+import instace from "../js/instance";
+import React, { useState, useEffect } from 'react';
+import deletarMicro from "../js/deletarMicro";
+import atualizarDados from "../js/atualizarFreelancer";
 
-export function Perfil() {
+export function PerfilF() {
+  console.log("PERFILMICRO");
+    const [userData, setUserData] = useState({ nome: '', email: '' });
+    useEffect(() => {
+      const fetchData = async () => {
+        console.log("FETCHDATA");
+        try {
+          // Aqui você faz a requisição para obter os detalhes do freelancer
+          const response = await instace.get('usuarios/detalhes-micro');
+          setUserData(response.data);
+        } catch (error) {
+          console.error('Erro ao obter detalhes do microempreendedor:', error);
+        }
+      };
+  
+      fetchData();
+    }, []);
 
   return (
     <>
       <Menu />
-      <Quadrados4 />
 
       
 
@@ -23,8 +40,8 @@ export function Perfil() {
           <div className="card-perfil">
             <div className="perfil-cima">
               <div className="perfil-info">
-                <h2 className="h2-subtitulo2">Exemplo</h2>
-                <h3 className="h2-subtitulo2">exemplo@exemplo.com</h3>
+              <h2 className="h2-subtitulo2">{userData.nome}</h2>
+              <h3 className="h2-subtitulo2">{userData.email}</h3>
               </div>
 
               <div className="div-embaixo-left">
@@ -177,9 +194,9 @@ export function Perfil() {
           
               <div className="div-forms">
 
-                <button className="btns-embaixo" id="btn-salvar">Salvar</button>
-              <button className="btns-embaixo" id="btn-cancelar">Cancelar</button>
-                <button className="btns-embaixo" id="btn-excluir">Excluir</button>
+              <button className="btns-embaixo" id="btn-salvar"onClick={atualizarDados}>Salvar</button>
+                  <button className="btns-embaixo" id="btn-cancelar">Cancelar</button>
+                  <button className="btns-embaixo" id="btn-excluir" onClick={deletarMicro}>Excluir</button>
 
               </div>
 
