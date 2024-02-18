@@ -1,0 +1,116 @@
+.corpo-cadastrar-demanda{
+    position: absolute;
+
+    width: 85%;
+    height: 70vh;
+
+    margin-left: 15%;
+    margin-top: 2%;
+
+    display: flex;
+    flex-direction: column;
+}
+.linha_inicio{
+    display: flex;
+    width: 80%;
+
+    margin-left: 10%;
+
+    padding: 0;
+}
+.nome-cadastro-demanda{
+    width: 60%;
+    margin-left: 0;
+}
+
+.data-cadastro-demanda{
+    width: 10%;
+}
+.p-cadastro-demanda{
+    width: 13%;
+
+    margin-left: 10%;
+}
+
+.btn-voltar{
+    position: relative;
+    background-color: transparent;
+
+    border-radius: 8px;
+    border: 1px solid #215683;
+
+    width: 5%;
+    height: 5vh;
+
+    margin-left: 20%;
+    margin-top: 8%;
+}
+.btn-voltar:hover{
+    position: relative;
+    background-color: #215683;
+    color: #FFF;
+
+    border-radius: 8px;
+    border: 1px solid;
+
+    width: 5%;
+    height: 5vh;
+
+    margin-left: 20%;
+    margin-top: 8%;
+}
+
+.select-cadastro-demanda{
+    margin-left: 10%;
+}
+
+.descicao-cadastro-demanda{
+    width: 90%;
+
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.descicao-cadastro-demanda textarea{
+    height: 30vh;
+    width: 90%;
+
+    border-radius: 8px;
+
+    padding: 2px 2px;
+}
+
+.linha_final{
+    display: flex;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.ipt-vlor-cadastro-demanda{
+    width: 35%;
+    margin-left: 0;
+}
+.ipt-data-cadastro-demanda{
+    width: 20%;
+}
+
+.btn-padrao-cadastro{
+    height: 6vh;
+    border-radius: 8px;
+    border: 1px solid #215683;
+
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.btn-padrao-cadastro:hover{
+    height: 6vh;
+    border-radius: 8px;
+    border: 1px solid #215683;
+    background-color: #215683;
+
+    color: #fff;
+
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+

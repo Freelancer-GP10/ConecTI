@@ -6,11 +6,12 @@ import Service from './pages/service.jsx'
 import { PerfilF } from './pages/Perfil.jsx'
 import PerfilMicro from './pages/PerfilMicroEmpreendedor.jsx'
 import ServiceMicro from './pages/serviceMicro.jsx'
+import CadastrarDemanda from './pages/CadastroDemanda.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ServiceMicro />
+    <CadastrarDemanda />
   </React.StrictMode>
 )
 
