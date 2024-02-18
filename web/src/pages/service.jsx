@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {Menu} from "../componentes/menu-lateral";
 // import {Perfil} from "../componentes/perfil";
 // import { Pesquisa } from "../componentes/pesquisa";
@@ -18,3 +20,4 @@ export function Service() {
         </>
     )
 }
+export default Service;

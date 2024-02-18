@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Menu } from "../componentes/menu-lateral";
 import { Perfil } from "../componentes/perfil";
 import { Servico3 } from "../componentes/servicos";
@@ -22,3 +24,4 @@ export function Workspace(){
         </>
     )
 }
+export default Workspace;
