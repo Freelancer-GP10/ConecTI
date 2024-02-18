@@ -1,9 +1,11 @@
+import React from 'react';
+
 import logoimg from "../assets/logo/logo.png";
 import "../css/global.css";
 import "../css/escolha.css";
 
 
-export function Choose() {
+function Choose() {
 
   return (
     <>
@@ -34,3 +36,4 @@ export function Choose() {
     </>
   );
 }
+export default Choose;

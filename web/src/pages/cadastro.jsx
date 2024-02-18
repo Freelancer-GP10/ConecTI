@@ -1,3 +1,5 @@
+import React from 'react';
+
 import "../css/global.css";
 import "../css/img.css";
 import "../css/cadastro.css";

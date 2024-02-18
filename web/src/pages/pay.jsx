@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {Menu} from "../componentes/menu-lateral";
 import { Perfil } from "../componentes/perfil";
 // import {Perfil} from "../componentes/perfil";
@@ -12,3 +14,4 @@ export function Pay(){
         </>
     )
 }
+export default Pay;

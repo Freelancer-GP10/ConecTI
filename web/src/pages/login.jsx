@@ -5,7 +5,7 @@ import logopreta from "../assets/logo/logo.png";
 
 import LoginJS from "../js/login";
 
-export function Login(){
+function Login(){
     return(
         <section>
         {/* Imagem */}
@@ -37,3 +37,4 @@ export function Login(){
       </section>
     )
 }
+export default Login;
