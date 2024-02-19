@@ -1,7 +1,26 @@
 import "./css/perfil.css";
 import "../css/global.css";
+import instace from "../js/instance";
+import React, { useState, useEffect } from 'react';
 
 export function Perfil(){
+    console.log("PERFILFREELANCER");
+    const [userData, setUserData] = useState({ nome: '', email: '' });
+    useEffect(() => {
+      const fetchData = async () => {
+        console.log("FETCHDATA");
+        try {
+          // Aqui você faz a requisição para obter os detalhes do freelancer
+          const response = await instace.get('usuarios/detalhes-usuario');
+          setUserData(response.data);
+        } catch (error) {
+          console.error('Erro ao obter detalhes do microempreendedor:', error);
+        }
+      };
+  
+      fetchData();
+    }, []);
+
     return(
         <>
             <div className="perfil">
@@ -35,7 +54,7 @@ export function Perfil(){
                 </svg>
             </div>
             
-            <p>Olá, SpTech!</p>
+            <p>{userData.nome}</p>
             </div>
         </div>
         </>

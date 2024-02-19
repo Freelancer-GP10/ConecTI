@@ -7,11 +7,14 @@ import { PerfilF } from './pages/Perfil.jsx'
 import PerfilMicro from './pages/PerfilMicroEmpreendedor.jsx'
 import ServiceMicro from './pages/serviceMicro.jsx'
 import CadastrarDemanda from './pages/CadastroDemanda.jsx'
+import Login from './pages/login.jsx'
+import { Perfil } from './componentes/perfil.jsx'
+import { CadastroFree } from './pages/cadastro.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <CadastrarDemanda />
+    <ServiceMicro />
   </React.StrictMode>
 )
 

@@ -9,7 +9,6 @@ export default function atualizarDados() {
     var sobrenome = document.getElementById('in_sobrenome').value;
     var linguagemDominio = document.getElementById('in_linguagem').value;
     var ramo = document.getElementById('in_areaAtuacao').value;
-    var senha = document.getElementById('in_senha').value
   
   
     instace.put('/freelancer',{
@@ -20,8 +19,7 @@ export default function atualizarDados() {
       dominio:linguagemDominio,
       areaAtuacao:area,
       ramo:ramo,
-      telefone:telefone,
-      senha:senha
+      telefone:telefone
     })
     .then(function (response) {
         console.log(response);

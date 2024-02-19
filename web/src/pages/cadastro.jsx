@@ -4,6 +4,7 @@ import "../css/global.css";
 import "../css/img.css";
 import "../css/cadastro.css";
 import imgLogo from "../assets/logo/logo.png"
+import { cadastrarFree } from '../js/cadastro';
 // import { cadastroFree, cadastroFree2, cadastroMicro1, cadastroMicroFinal} from "../js/cadastro";
 
 
@@ -109,7 +110,7 @@ export function CadastroFree(){
                            <input className="input-cadastro" type="password" id="senhaFree2" placeholder="Confirmar Senha" />
                        </form>
     
-                       <button className="btn-padrao" id="button" /*</div>onClick={cadastroFree}*/>Prosseguir</button>
+                       <button className="btn-padrao" id="button" onClick={cadastrarFree}>Prosseguir</button>
                    </div>
             </div>
     

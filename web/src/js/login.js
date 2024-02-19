@@ -16,6 +16,7 @@ function LoginJS(){
     instace.post("/usuarios/login",dados)
     .then((response)=>{
         console.log(response);
+
         console.log("Login deu certo");
         console.log(response.data);
         console.log(response.token);

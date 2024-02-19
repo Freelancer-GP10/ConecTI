@@ -7,6 +7,7 @@ body{
     font-family: Oxanium;
     background-color: #fdfdfd;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 a{
     text-decoration: none;

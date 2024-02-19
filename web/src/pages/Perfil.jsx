@@ -4,18 +4,19 @@ import { Menu } from "../componentes/menu-lateral";
 import editicon from "../assets/edit.png"
 import instace from "../js/instance";
 import React, { useState, useEffect } from 'react';
-import deletarMicro from "../js/deletarMicro";
+import deletarFreelancer from "../js/deletarFreelancer";
 import atualizarDados from "../js/atualizarFreelancer";
+import baixarPortifolio from "../js/portifolioFreelancer";
 
 export function PerfilF() {
-  console.log("PERFILMICRO");
+  console.log("PERFILFREELANCER");
     const [userData, setUserData] = useState({ nome: '', email: '' });
     useEffect(() => {
       const fetchData = async () => {
         console.log("FETCHDATA");
         try {
           // Aqui você faz a requisição para obter os detalhes do freelancer
-          const response = await instace.get('usuarios/detalhes-micro');
+          const response = await instace.get('usuarios/detalhes-usuario');
           setUserData(response.data);
         } catch (error) {
           console.error('Erro ao obter detalhes do microempreendedor:', error);
@@ -25,6 +26,40 @@ export function PerfilF() {
       fetchData();
     }, []);
 
+    const [selectedFile, setSelectedFile] = useState(null);
+    const [git, setGit] = useState('git');
+
+  const handleFileChange = (e) => {
+    setSelectedFile(e.target.files[0]);
+  };
+  const handleGitChange = (e) => {
+    setGit("git");
+  };
+
+  const handleUpload = () => {
+    if (!selectedFile) {
+      alert('Selecione um arquivo antes de fazer upload.');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', selectedFile);
+    formData.append('git', git);
+
+    instace.post('/portifolio/upload', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    })
+    .then(response => {
+      console.log('Resposta do servidor:', response);
+      alert('Arquivo enviado com sucesso!');
+    })
+    .catch(error => {
+      console.error('Erro ao enviar arquivo:', error);
+      alert('Erro ao enviar arquivo. Por favor, tente novamente.');
+    });
+  };
   return (
     <>
       <Menu />
@@ -84,9 +119,9 @@ export function PerfilF() {
 
 
               <div className="btn-att-baixar">
-
-                <button className="btns-embaixo" id="btn-att-baixar">Atualizar</button>
-                <button className="btns-embaixo" id="btn-baixar"> Baixar</button>
+                <input className="btns-embaixo-upload" type="file" accept=".zip" onChange={handleFileChange}/>
+                <button className="btns-embaixo" id="btn-att-baixar" onClick={handleUpload} disabled={!selectedFile}>Atualizar</button>
+                <button className="btns-embaixo" id="btn-baixar" onClick={baixarPortifolio}> Baixar</button>
               </div>
 
             </div>
@@ -104,7 +139,7 @@ export function PerfilF() {
                 <div className="div-input">
 
                   <input className="ipt-perfil" type="text" placeholder='Nome' id='in_name' />
-                  <input className="ipt-perfil" type="text" placeholder='Sobrenome' />
+                  <input className="ipt-perfil" type="text" placeholder='Sobrenome' id="in_sobrenome"/>
                 </div>
                 <div className="div-input row">
                   <input className="ipt-perfil" type="text" placeholder='CPF' id='in_cpf' />
@@ -112,14 +147,14 @@ export function PerfilF() {
                 </div>
 
                 <div className="div-input">
-                <input className="ipt-perfil" type="email" placeholder='E-mail' />
+                <input className="ipt-perfil" type="email" placeholder='E-mail' id="in_email"/>
                 </div>
               </div>
 
 
 
               <div className="dropdown-container">
-                <select>
+                <select id="id_area">
                   <option value="">-- Área de atuação --</option>
                   <option value="ai-engineer">AI Engineer</option>
                   <option value="agile-coach">Agile Coach</option>
@@ -154,7 +189,7 @@ export function PerfilF() {
               </div>
 
               <div className="dropdown-container">
-                <select>
+                <select id="in_linguagem">
                   <option value="">-- Selecione uma ou mais linguagens e/ou ferramentas --</option>
                   <option value="ansible">Ansible</option>
                   <option value="aws">AWS</option>
@@ -179,7 +214,7 @@ export function PerfilF() {
 
 
               <div className="dropdown-container">
-                <select>
+                <select id="in_areaAtuacao">
                   <option value="">-- Área de formação --</option>
                   <option value="ads">Análise e Desenvolvimento de Sistemas</option>
                   <option value="cco">Ciência da Computação</option>
@@ -195,8 +230,7 @@ export function PerfilF() {
               <div className="div-forms">
 
               <button className="btns-embaixo" id="btn-salvar"onClick={atualizarDados}>Salvar</button>
-                  <button className="btns-embaixo" id="btn-cancelar">Cancelar</button>
-                  <button className="btns-embaixo" id="btn-excluir" onClick={deletarMicro}>Excluir</button>
+                  <button className="btns-embaixo" id="btn-excluir" onClick={deletarFreelancer}>Excluir</button>
 
               </div>
 

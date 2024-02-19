@@ -28,7 +28,7 @@ function Login(){
                   <input type="password" id="senha" placeholder="Senha" />
                 </form>
         
-                <h2>Deseja manter logado? <input type="checkbox" id="myCheckbox" className="checkbox" /></h2>
+                {/* <h2>Deseja manter logado? <input type="checkbox" id="myCheckbox" className="checkbox" /></h2> */}
                 <button className="btn-padrao" id="button" onClick={LoginJS}>Login</button>
             </div>
                     

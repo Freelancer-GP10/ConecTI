@@ -85,7 +85,7 @@ export default function PerfilMicro() {
                   seus pagamentos!</p>
   
   
-                <div className="btn-att-baixar">
+                <div className="btn-att-baixar-micro">
   
                   <button className="btns-embaixo" id="btn-att-baixar" >Atualizar</button>
                   <button className="btns-embaixo" id="btn-baixar"> Baixar</button>
@@ -142,7 +142,6 @@ export default function PerfilMicro() {
                 <div className="div-forms">
   
                   <button className="btns-embaixo" id="btn-salvar"onClick={atualizarMicro}>Salvar</button>
-                  <button className="btns-embaixo" id="btn-cancelar">Cancelar</button>
                   <button className="btns-embaixo" id="btn-excluir" onClick={deletarFreelancer}>Excluir</button>
   
                 </div>

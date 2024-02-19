@@ -1,6 +1,6 @@
 import instace from "./instance";
 
-export function cadastroFree(){
+export function cadastrarFree(){
     sessionStorage.removeItem("token")
     const emailinput = document.getElementById('emailFree').value;
     const senhainput = document.getElementById('senhaFree').value;
@@ -26,7 +26,7 @@ export function cadastroFree(){
         console.log(response.data.token);
         sessionStorage.setItem("token",response.data.token);
 
-        alert("Login realizado com sucesso!")
+        alert("Cadastro previo feito com sucesso")
         // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
     })
     .catch((error)=>{
