@@ -11,6 +11,9 @@ footer {
 
     margin-top: 10%;
 }
+.logo-grande-footer{
+    width: 50%;
+}
 .coluna-logo-footer{
 
     display: flex;
