@@ -5,7 +5,7 @@ import "../css/global.css";
 import "../css/escolha.css";
 
 
-function EscolhaCadastro() {
+ function EscolhaCadastro() {
 
   return (
     <>

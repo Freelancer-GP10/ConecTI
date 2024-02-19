@@ -10,7 +10,7 @@ import desfazerPostagem from "../js/desfazerPostagem";
 import "../css/global.css";
 // import {Servico1} from "../componentes/service";
 
- function ServiceMicro(){
+ function ServiceMicroo(){
     const [servicos, setServicos] =  useState([]);
     useEffect(() => {
         const fetchData = async () => {
