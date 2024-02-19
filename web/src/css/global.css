@@ -161,3 +161,61 @@ a{
 
     color: #ffffff;
 }
+.btn-cadastrar-demanda{
+    width: 45%;
+    height: 5vh;
+
+    padding: 10px 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 7px;
+
+    border-radius: 6px;
+    border: 2px solid #215683;
+    background-color: transparent;
+
+    color: #000;
+    font-family: Oxanium;
+    font-size: 12px;
+    font-style: bold;
+    font-weight: 400;
+    line-height: bold;
+    cursor: pointer;
+}
+.btn-cadastrar-demanda:hover{
+    width: 45%;
+    height: 5vh;
+
+    padding: 10px 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 7px;
+
+    border-radius: 6px;
+    border: 2px solid #215683;
+    background-color: transparent;
+
+    background-color: #215683;
+    color: #ffffff;
+
+    font-family: Oxanium;
+    font-size: 12px;
+    font-style: bold;
+    font-weight: 400;
+    line-height: bold;
+    cursor: pointer;
+}
+
+.btn-service-mm{
+    position: absolute;
+    display: flex;
+    margin-left: 65%;
+    margin-top: 8%;
+
+    width: 26%;
+    justify-content: space-between;
+}

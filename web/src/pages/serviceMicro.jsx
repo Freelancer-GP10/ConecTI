@@ -6,7 +6,9 @@ import { Servico3 } from "../componentes/servicos";
 import { useState, useEffect } from 'react';
 import instace from '../js/instance';
 import { format, parseISO } from "date-fns";
-
+import desfazerPostagem from "../js/desfazerPostagem";
+import "../css/global.css";
+// import {Servico1} from "../componentes/service";
 
  function ServiceMicro(){
     const [servicos, setServicos] =  useState([]);
@@ -38,8 +40,10 @@ import { format, parseISO } from "date-fns";
         <h2 className="h2-grande-titulacao">Service</h2>
         <Perfil />
 
-        <button className="btn-cadastrar-demanda">Cadastrar demanda</button>
-
+        <div className="btn-service-mm">
+        <button className="btn-cadastrar-demanda btn-demanda">Cadastrar demanda</button>
+        <button className="btn-cadastrar-demanda btn-desfazer" onClick={desfazerPostagem}>Desfazer demanda</button>
+        </div>
         <div className="conteudo-servicos">
             <div className="alinhamento-itens-conteudo">
                 {servicos.map((servico, index) => (
