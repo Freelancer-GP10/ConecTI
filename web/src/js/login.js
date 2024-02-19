@@ -16,21 +16,26 @@ function LoginJS(){
     instace.post("/usuarios/login",dados)
     .then((response)=>{
         console.log(response);
-
+       var papel = response.data.papel; 
         console.log("Login deu certo");
         console.log(response.data);
         console.log(response.token);
         console.log(response.data.token);
         sessionStorage.setItem("token",response.data.token);
 
-        alert("AAAAAAAAAA")
-        // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
-        window.location("/workspace")
+        alert("Login efetuado")
+        if(papel=="freelancer".toLowerCase()){
+            window.location.href = "../freelancer/workspace";
+        }else if(papel=="empresa".toLowerCase()){
+            window.location.href = "../microempreendedor/workspaceMicro";
+        }
+        
+        
     })
     .catch((error)=>{
         console.log("Deu erro");
         console.log(error);
-        console.log("blabalanjdfnsldf")
+        alert("Email ou senha incorretos")
     })
 }
 
