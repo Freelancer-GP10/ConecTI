@@ -14,9 +14,9 @@ export function Footer(){
             <div className="colunas">
                 <div className="coluna-um">
                     <h2 className="h2-16"><b>Comece agora mesmo!</b></h2>
-                    <a href="#"><p className="p-12 p-footer">Cadastre-se</p></a>
-                    <a href="#"><p className="p-12 p-footer">Freelancer</p></a>
-                    <a href="#"><p className="p-12 p-footer">Microempreendedor</p></a>
+                    <a href="/escolha"><p className="p-12 p-footer">Cadastre-se</p></a>
+                    <a href="/cadastro-freelancer"><p className="p-12 p-footer">Freelancer</p></a>
+                    <a href="/cadastro-Microempreendedorz"><p className="p-12 p-footer">Microempreendedor</p></a>
                 </div>
 
 
@@ -25,6 +25,7 @@ export function Footer(){
          <div className="coluna-dois">
              <h2 className="h2-16"><b>Atendimento 24h</b></h2>
                 <div className="alinhamento-inline alinhamento-p">
+                    <a href="/contato">
                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
                         <path d="M18.9999 8.5C18.9999 4.08172 15.4182 0.5 10.9999 0.5C6.58163 0.5 2.99991 4.08172 2.99991 8.5" stroke="#2B9DB8" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M1 12.9387V11.0619C1 10.1441 1.62459 9.34418 2.51493 9.12158L4.25448 8.68668C4.63317 8.59198 5 8.87838 5 9.26878V14.7318C5 15.1222 4.63317 15.4086 4.25448 15.3139L2.51493 14.879C1.62459 14.6564 1 13.8565 1 12.9387Z" stroke="#2B9DB8"/>
@@ -34,6 +35,7 @@ export function Footer(){
                     </svg> 
 
                     <p className="p-12 p-footer-contact">Central de ajuda</p>
+                    </a>
                 </div>
 
                 <div className="alinhamento-inline alinhamento-p">

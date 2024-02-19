@@ -5,7 +5,7 @@ import "../css/global.css";
 import "../css/escolha.css";
 
 
-function Choose() {
+function EscolhaCadastro() {
 
   return (
     <>
@@ -36,4 +36,4 @@ function Choose() {
     </>
   );
 }
-export default Choose;
+export default EscolhaCadastro;

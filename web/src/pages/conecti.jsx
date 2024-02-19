@@ -27,7 +27,7 @@ function Institucional(){
                                 <li>Contato</li>
                             </ul>
                         </div>
-                        <button className="button-home">Entrar</button>
+                        <a className="a_institu" href="http:/login"><button className="button-home">Entrar</button></a>
                     </div>
                     <div className="slogan-home">
                         <h1 className="h1-grande">ConecTI</h1>

@@ -15,12 +15,12 @@ function Login(){
         
         <div className="container2">
         
-          <a href="./"><img className="logopreta" src={logopreta} alt="ConecTI" /></a>
+          <a href="/"><img className="logopreta" src={logopreta} alt="ConecTI" /></a>
         
           <div className="form2">
         
             <h1>Faça seu Login!</h1>
-            <h2>Não possui cadastro? <a href="/cadastro">Cadastre-se</a></h2>
+            <h2>Não possui cadastro? <a href="/escolha">Cadastre-se</a></h2>
         
             <div className="infor">
                 <form className="informations">

@@ -3,7 +3,7 @@ import "../css/global.css";
 import instace from "../js/instance";
 import atualizarMicro from "../js/atualizarEmpresa";
 import React, { useState, useEffect } from 'react';
-import { Menu } from "../componentes/menu-lateral";
+import { Menu, Menu2 } from "../componentes/menu-lateral";
 import editicon from "../assets/edit.png"
 import deletarFreelancer from "../js/deletarFreelancer";
 
@@ -28,7 +28,7 @@ export default function PerfilMicro() {
    
     return (
       <>
-        <Menu />
+        <Menu2 />
   
   
   

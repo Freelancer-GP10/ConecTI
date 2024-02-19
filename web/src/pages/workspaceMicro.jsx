@@ -1,16 +1,16 @@
-// import React from 'react';
+import React from 'react';
 
-import {Menu, Menu2} from "../componentes/menu-lateral";
-import {Perfil} from "../componentes/perfil";
-import { Servico3 } from "../componentes/servicos";
+import { Menu, Menu2 } from "../componentes/menu-lateral";
+import { Perfil } from "../componentes/perfil";
+import { Servico2 } from "../componentes/servicos";
 import { useState, useEffect } from 'react';
 import instace from '../js/instance';
 import { format, parseISO } from "date-fns";
-import desfazerPostagem from "../js/desfazerPostagem";
-import "../css/global.css";
-// import {Servico1} from "../componentes/service";
+// import { Perfil } from "../componentes/perfil";
+// import { Pesquisa } from "../componentes/pesquisa";
+// import { Servico2 } from "../componentes/service";
 
- function ServiceMicro(){
+export function WorkspaceMicro(){
     const [servicos, setServicos] =  useState([]);
     useEffect(() => {
         const fetchData = async () => {
@@ -37,17 +37,12 @@ import "../css/global.css";
     return(
         <>
         <Menu2 />
-        <h2 className="h2-grande-titulacao">Service</h2>
+        <h2 className="h2-grande-titulacao">Workspace</h2>
         <Perfil />
-
-        <div className="btn-service-mm">
-        <button className="btn-cadastrar-demanda btn-demanda">Cadastrar demanda</button>
-        <button className="btn-cadastrar-demanda btn-desfazer" onClick={desfazerPostagem}>Desfazer demanda</button>
-        </div>
         <div className="conteudo-servicos">
             <div className="alinhamento-itens-conteudo">
-                {servicos.map((servico, index) => (
-                    <Servico3
+            {servicos.map((servico, index) => (
+                    <Servico2
                         key={index}
                         titulo={servico.nome}
                         descricao={servico.descricao}
@@ -61,5 +56,3 @@ import "../css/global.css";
         </>
     )
 }
-
-export default ServiceMicroo;

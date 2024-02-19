@@ -11,6 +11,11 @@ body{
 }
 a{
     text-decoration: none;
+    display: flex;
+    width: 80%;
+}
+.a_institu{
+    width: 20%;
 }
 
 /* Textos */

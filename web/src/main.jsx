@@ -33,6 +33,9 @@ import Service from "./pages/service.jsx";
 import Workspace from "./pages/workspace.jsx";
 
 import { CadastroMicro, CadastroMicro2, CadastroFree, CadastroFree2 } from './pages/cadastro.jsx';
+import EscolhaCadastro from './pages/escolha.jsx';
+import ServiceMicroo from './pages/serviceMicro.jsx';
+import { WorkspaceMicro } from './pages/workspaceMicro.jsx';
 
 
 const router = createBrowserRouter([
@@ -41,19 +44,19 @@ const router = createBrowserRouter([
     element: <Institucional />,
   },
   {
-    path: "/cadastro-micro",
+    path: "/cadastro-previo-microempreendedor",
     element: <CadastroMicro />,
   },
   {
-    path: "/cadastro-micro2",
+    path: "/cadastro-microempreendedor",
     element: <CadastroMicro2 />,
   },
   {
-    path: "/cadastro-free",
+    path: "/cadastro-previo-freelancer",
     element: <CadastroFree />,
   },
   {
-    path: "/cadastro-free2",
+    path: "/cadastro-freelancer",
     element: <CadastroFree2 />,
   },
   {
@@ -73,12 +76,24 @@ const router = createBrowserRouter([
     element: <Pay />,
   },
   {
-    path: "/service",
+    path: "/freelancer/service",
     element: <Service />,
   },
   {
-    path: "/workspace",
+    path: "/microempreendedor/service",
+    element: <ServiceMicroo />
+  },
+  {
+    path: "/freelancer/workspace",
     element: <Workspace />,
+  },
+  {
+    path: "/microempreendedor/workspace",
+    element: <WorkspaceMicro />,
+  },
+  {
+    path: "/escolha",
+    element: <EscolhaCadastro />,
   },
 ]);
 
