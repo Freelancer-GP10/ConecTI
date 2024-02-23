@@ -4,7 +4,7 @@ import "../css/global.css";
 import "../css/img.css";
 import "../css/cadastro.css";
 import imgLogo from "../assets/logo/logo.png"
-import { cadastrarFree } from '../js/cadastro';
+import { cadastrarFree ,cadastroFree2} from '../js/cadastro';
 // import { cadastroFree, cadastroFree2, cadastroMicro1, cadastroMicroFinal} from "../js/cadastro";
 
 
@@ -207,7 +207,7 @@ export function CadastroFree2(){
 
                         </form>
 
-                        <button className="btn-padrao" id="button" /*onClick={cadastroFree2}*/>Cadastrar</button>
+                        <button className="btn-padrao" id="button" onClick={cadastroFree2}>Cadastrar</button>
                     </div>
                 </div>
 

@@ -25,8 +25,11 @@ export function cadastrarFree(){
         console.log(response.token);
         console.log(response.data.token);
         sessionStorage.setItem("token",response.data.token);
-
+        // redirecione para tela de login
         alert("Cadastro previo feito com sucesso")
+        // redirecione para o login
+        window.location.href = "/login";
+    
         // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
     })
     .catch((error)=>{
@@ -76,7 +79,7 @@ export function cadastroFree2(){
         console.log(response.data.token);
 
         alert("AAAAAAAAAA")
-        // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
+        
     })
     .catch((error)=>{
         console.log("Deu erro");
