@@ -1,6 +1,5 @@
-import React from 'react';
 
-import { Menu, Menu2 } from "../componentes/menu-lateral";
+import { Menu2 } from "../componentes/menu-lateral";
 import { Perfil } from "../componentes/perfil";
 import { Servico2 } from "../componentes/servicos";
 import { useState, useEffect } from 'react';

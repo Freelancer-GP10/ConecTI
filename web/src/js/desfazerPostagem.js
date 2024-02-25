@@ -10,3 +10,4 @@ export default function desfazerPostagem(){
         alert("Erro ao desfazer postagem!");
     })
 }
+

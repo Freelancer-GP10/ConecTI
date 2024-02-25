@@ -5,6 +5,7 @@ import "../css/img.css";
 import "../css/cadastro.css";
 import imgLogo from "../assets/logo/logo.png"
 import { cadastrarFree ,cadastroFree2} from '../js/cadastro';
+import { cadastroMicro1 } from '../js/cadastro';
 // import { cadastroFree, cadastroFree2, cadastroMicro1, cadastroMicroFinal} from "../js/cadastro";
 
 
@@ -28,12 +29,12 @@ export function CadastroMicro(){
                        <p className="p-14-azul">Já possui Cadastro? <a className="a-14-azul" href="./Login">Login</a></p>
     
                        <form className="form-cadastro-free" action="">
-                           <input className="input-cadastro" type="text" id="emailFree" placeholder="E-mail" />
-                           <input className="input-cadastro" type="password" id="senhaFree" placeholder="Crie uma senha" />
-                           <input className="input-cadastro" type="password" id="senhaFree2" placeholder="Confirmar Senha" />
+                           <input className="input-cadastro" type="text" id="emailMicro" placeholder="E-mail" />
+                           <input className="input-cadastro" type="password" id="senhaMicro" placeholder="Crie uma senha" />
+                           <input className="input-cadastro" type="password" id="senhaMicro2" placeholder="Confirmar Senha" />
                        </form>
     
-                       <button className="btn-padrao" id="button" /*</div>onClick={cadastroFree}*/>Prosseguir</button>
+                       <button className="btn-padrao" id="button" onClick={cadastroMicro1} >Prosseguir</button>
                    </div>
             </div>
     

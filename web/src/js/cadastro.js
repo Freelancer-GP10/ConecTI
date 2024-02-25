@@ -109,7 +109,7 @@ export function cadastroMicro1(){
             email:emailinput,
             papel:"Empresa"
         }
-       
+        console.log(dados.papel);
         instace.post("/usuarios",dados)
         .then((response)=>{
             console.log("Login deu certo");
@@ -117,8 +117,10 @@ export function cadastroMicro1(){
             console.log(response.token);
             console.log(response.data.token);
             sessionStorage.setItem("token",response.data.token);
-    
-            alert("AAAAAAAAAA")
+            // redirecione para tela de login
+            alert("Cadastro previo feito com sucesso")
+            // redirecione para o login
+            window.location.href = "/login";
             // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
         })
         .catch((error)=>{

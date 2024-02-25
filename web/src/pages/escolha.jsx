@@ -20,7 +20,7 @@ import "../css/escolha.css";
 
           <div className="div-choose-butons">
             <a href="/cadastro-previo-freelancer"><button className="btn-padrao btn-choose-1">Freelancer</button></a>
-            <a href="/cadastro-previo-empresa"><button className="btn-padrao btn-choose-1">Microempreendedor</button></a>
+            <a href="/cadastro-previo-microempreendedor"><button className="btn-padrao btn-choose-1">Microempreendedor</button></a>
           </div>
 
 

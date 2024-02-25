@@ -31,7 +31,7 @@ function LoginJS() {
                 if (usuarioResponse && (usuarioResponse.data.nome == null || usuarioResponse.data.nome.length == 0)) {
                     window.location.href = papel.toLowerCase() == "freelancer" ? "/cadastro-freelancer" : "/cadastro-microempreendedor";
                 } else {
-                    window.location.href = papel.toLowerCase() == "freelancer" ? "/freelancer/workspace" : "../microempreendedor/workspaceMicro";
+                    window.location.href = papel.toLowerCase() == "freelancer" ? "/freelancer/workspace" : "..//microempreendedor/workspace";
                 }
             }).catch((error) => {
                 console.log("Erro ao buscar detalhes do usuário");

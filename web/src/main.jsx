@@ -18,10 +18,8 @@ import ReactDOM from 'react-dom/client'
 //   </React.StrictMode>
 // )
 
- import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-
+import CadastrarDemanda from './pages/CadastroDemanda.jsx';
 //===================CONFIGURANDO ROUTER======================//
 // import App from './App.jsx';
 import Institucional from "./pages/conecti.jsx";
@@ -104,6 +102,10 @@ const router = createBrowserRouter([
   {
     path: "/microempreendedor/perfil",
     element: <PerfilMicro />,
+  },
+  {
+    path: "/MicroEmpreendedor/CadastrarDemanda",
+    element: <CadastrarDemanda />,
   },
 ]);
 
