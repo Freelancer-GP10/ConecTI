@@ -1,5 +1,5 @@
-import React from 'react';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../css/global.css";
 import "../css/img.css";
 import "../css/cadastro.css";
@@ -39,6 +39,7 @@ export function CadastroMicro(){
             </div>
     
                <div className="img-cadastro"></div>
+               <ToastContainer />
         </section>
         </>
     )
@@ -120,7 +121,6 @@ export function CadastroFree(){
         </>
     )
 }
-
 export function CadastroFree2(){
     return(
         <>
@@ -151,7 +151,7 @@ export function CadastroFree2(){
                             <input className="inputInfo2 input-cadastro-metade" type="text" id="cpf" placeholder="CPF" />
                             <input className="inputInfo2 input-cadastro-metade" type="text" id="telefoneFree" placeholder="Telefone" />
                             {/* <input type="select" id="areaAtuacao" placeholder="Area de Atuação" /> */}
-                            <select className="select-cadastro" name="Area de Atuação" placeholder="Area de Atuação" id="">
+                            <select className="select-cadastro" name="Area de Atuação" placeholder="Area de Atuação" id="areaAtuacao">
                                 <option value="">Area de Atuação</option>
                                 <option value="">Área de Atuação</option>
                                 <option value="frontEnd">Front-end</option>
@@ -171,7 +171,7 @@ export function CadastroFree2(){
                                 <option value="dataScience">Ciência de Dados (Data Science)</option>
                             </select>
                             
-                            <select className="select-cadastro" name="linguagemDeProgramacao" id="linguagemDeProgramacao">
+                            <select className="select-cadastro" name="linguagemDeProgramacao" id="linguagemDominio">
                                 <option value="">Linguagem de Programação</option>
                                 <option value="javascript">JavaScript</option>
                                 <option value="python">Python</option>
@@ -190,7 +190,7 @@ export function CadastroFree2(){
                                 <option value="htmlCss">HTML/CSS</option>
                             </select>
 
-                            <select className="select-cadastro" name="formacaoDesenvolvimento" id="formacaoDesenvolvimento">
+                            <select className="select-cadastro" name="formacaoDesenvolvimento" id="formacao">
                                 <option value="">Formação na Área de Desenvolvimento</option>
                                 <option value="graduacaoCienciaComputacao">Graduação em Ciência da Computação</option>
                                 <option value="graduacaoEngenhariaSoftware">Graduação em Engenharia de Software</option>
@@ -215,6 +215,7 @@ export function CadastroFree2(){
                 {/* imagem */}
 
                 <div className="img-cadastro-freelancer"></div>
+                <ToastContainer />
             </section>
         </>
     )

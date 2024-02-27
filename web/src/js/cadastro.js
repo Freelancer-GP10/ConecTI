@@ -1,4 +1,6 @@
 import instace from "./instance";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export function cadastrarFree(){
     sessionStorage.removeItem("token")
@@ -51,14 +53,7 @@ export function cadastroFree2(){
     const areaAtuacaoFre = document.getElementById('areaAtuacao').value;
     const linguagemDominioFre = document.getElementById('linguagemDominio').value;
     const formacaoFre = document.getElementById('formacao').value;
-    console.log(nomeFre);
-    console.log(sobrenomeFre);
-    console.log(cpfFre);
-    console.log(telefoneFre);
-    console.log(areaAtuacaoFre);
-    console.log(linguagemDominioFre);
-    console.log(formacaoFre);
-
+   
     if(nomeFre != "" && sobrenomeFre != "" && cpfFre != "" && telefoneFre != "" && areaAtuacaoFre != "" && linguagemDominioFre != "" && formacaoFre != ""){
         
     var dados =
@@ -73,13 +68,13 @@ export function cadastroFree2(){
     }
     instace.post("/freelancer",dados)
     .then((response)=>{
-        console.log("Cadastro efetuado com sucesso");
         console.log(response.data);
         console.log(response.token);
         console.log(response.data.token);
-
-        alert("AAAAAAAAAA")
-        
+        toast.success("Cadastro efetuado com sucesso",{ autoClose: 2000 });
+        setTimeout(() => {
+            window.location.href = "/freelancer/workspace";
+          }, 2000);
     })
     .catch((error)=>{
         console.log("Deu erro");
@@ -87,9 +82,10 @@ export function cadastroFree2(){
     })
 
 }else{
-    alert("Dados invalidos, preencha corretamente as informações para prosseguir!!")
+    toast.error("Dados invalidos, preencha corretamente as informações para prosseguir!!")
 }
 }
+
 
 export function cadastroMicro1(){
     sessionStorage.removeItem("token")
@@ -117,18 +113,18 @@ export function cadastroMicro1(){
             console.log(response.token);
             console.log(response.data.token);
             sessionStorage.setItem("token",response.data.token);
-            // redirecione para tela de login
-            alert("Cadastro previo feito com sucesso")
-            // redirecione para o login
-            window.location.href = "/login";
-            // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
+            toast.success("Cadastro efetuado com sucesso",{ autoClose: 2000 });
+        setTimeout(() => {
+            window.location.href = "/microempreendedor/workspace";
+          }, 2000);
         })
         .catch((error)=>{
+            toast.error("Erro ao cadastrar ");
             console.log("Deu erro");
             console.log(error);
         }) 
     }else{
-        alert("Dados invalidos, preencha as informações corretamente para prosseguir!")
+        toast.error("Erro ao cadastrar ");
     }
 }
 export function buscarCep(){
@@ -183,6 +179,7 @@ export function cadastroMicroFinal(){
     })
 
 }else{
+
     alert("Dados invalidos, preencha corretamente as informações para prosseguir!!")
 }
 }
