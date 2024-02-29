@@ -38,6 +38,7 @@ import ServiceMicroo from './pages/serviceMicro.jsx';
 import { WorkspaceMicro } from './pages/workspaceMicro.jsx';
 import { PerfilF } from './pages/Perfil.jsx';
 import PerfilMicro from './pages/PerfilMicroEmpreendedor.jsx';
+import CadastrarDemanda from './pages/CadastroDemanda.jsx';
 
 
 const router = createBrowserRouter([
@@ -104,6 +105,11 @@ const router = createBrowserRouter([
     path: "/microempreendedor/perfil",
     element: <PerfilMicro />,
   },
+  {
+    path: "/microempreendedor/cadastrarDemanda",
+    element: <CadastrarDemanda />,
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
