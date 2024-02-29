@@ -1,6 +1,6 @@
 import instace from "./instance";
 
-export function cadastrarServico(){
+function cadastrarServico(){
     const nomeService = document.getElementById('nome').value;
     const dataService = document.getElementById('dataInicio').value;
     const tipoService = document.getElementById('tipo').value;
@@ -34,3 +34,5 @@ export function cadastrarServico(){
         })
     }
 }
+
+export default cadastrarServico;

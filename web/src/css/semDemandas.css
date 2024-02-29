@@ -1,0 +1,22 @@
+.aviso-demanda-vazia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .aviso-demanda-vazia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+  }
+  
+  .aviso-demanda-vazia h2 {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0 auto;
+  }
+  

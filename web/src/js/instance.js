@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const instace = axios.create({
+
      baseURL: 'http://10.18.33.128:8080',
      timeout:10000,
      headers: {

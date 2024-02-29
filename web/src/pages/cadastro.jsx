@@ -1,10 +1,11 @@
-import React from 'react';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../css/global.css";
 import "../css/img.css";
 import "../css/cadastro.css";
 import imgLogo from "../assets/logo/logo.png"
-import { cadastrarFree } from '../js/cadastro';
+import { cadastrarFree ,cadastroFree2} from '../js/cadastro';
+import { cadastroMicro1 } from '../js/cadastro';
 // import { cadastroFree, cadastroFree2, cadastroMicro1, cadastroMicroFinal} from "../js/cadastro";
 
 
@@ -28,16 +29,17 @@ export function CadastroMicro(){
                        <p className="p-14-azul">Já possui Cadastro? <a className="a-14-azul" href="./Login">Login</a></p>
     
                        <form className="form-cadastro-free" action="">
-                           <input className="input-cadastro" type="text" id="emailFree" placeholder="E-mail" />
-                           <input className="input-cadastro" type="password" id="senhaFree" placeholder="Crie uma senha" />
-                           <input className="input-cadastro" type="password" id="senhaFree2" placeholder="Confirmar Senha" />
+                           <input className="input-cadastro" type="text" id="emailMicro" placeholder="E-mail" />
+                           <input className="input-cadastro" type="password" id="senhaMicro" placeholder="Crie uma senha" />
+                           <input className="input-cadastro" type="password" id="senhaMicro2" placeholder="Confirmar Senha" />
                        </form>
     
-                       <button className="btn-padrao" id="button" /*</div>onClick={cadastroFree}*/>Prosseguir</button>
+                       <button className="btn-padrao" id="button" onClick={cadastroMicro1} >Prosseguir</button>
                    </div>
             </div>
     
                <div className="img-cadastro"></div>
+               <ToastContainer />
         </section>
         </>
     )
@@ -119,7 +121,6 @@ export function CadastroFree(){
         </>
     )
 }
-
 export function CadastroFree2(){
     return(
         <>
@@ -150,7 +151,7 @@ export function CadastroFree2(){
                             <input className="inputInfo2 input-cadastro-metade" type="text" id="cpf" placeholder="CPF" />
                             <input className="inputInfo2 input-cadastro-metade" type="text" id="telefoneFree" placeholder="Telefone" />
                             {/* <input type="select" id="areaAtuacao" placeholder="Area de Atuação" /> */}
-                            <select className="select-cadastro" name="Area de Atuação" placeholder="Area de Atuação" id="">
+                            <select className="select-cadastro" name="Area de Atuação" placeholder="Area de Atuação" id="areaAtuacao">
                                 <option value="">Area de Atuação</option>
                                 <option value="">Área de Atuação</option>
                                 <option value="frontEnd">Front-end</option>
@@ -170,7 +171,7 @@ export function CadastroFree2(){
                                 <option value="dataScience">Ciência de Dados (Data Science)</option>
                             </select>
                             
-                            <select className="select-cadastro" name="linguagemDeProgramacao" id="linguagemDeProgramacao">
+                            <select className="select-cadastro" name="linguagemDeProgramacao" id="linguagemDominio">
                                 <option value="">Linguagem de Programação</option>
                                 <option value="javascript">JavaScript</option>
                                 <option value="python">Python</option>
@@ -189,7 +190,7 @@ export function CadastroFree2(){
                                 <option value="htmlCss">HTML/CSS</option>
                             </select>
 
-                            <select className="select-cadastro" name="formacaoDesenvolvimento" id="formacaoDesenvolvimento">
+                            <select className="select-cadastro" name="formacaoDesenvolvimento" id="formacao">
                                 <option value="">Formação na Área de Desenvolvimento</option>
                                 <option value="graduacaoCienciaComputacao">Graduação em Ciência da Computação</option>
                                 <option value="graduacaoEngenhariaSoftware">Graduação em Engenharia de Software</option>
@@ -207,13 +208,14 @@ export function CadastroFree2(){
 
                         </form>
 
-                        <button className="btn-padrao" id="button" /*onClick={cadastroFree2}*/>Cadastrar</button>
+                        <button className="btn-padrao" id="button" onClick={cadastroFree2}>Cadastrar</button>
                     </div>
                 </div>
 
                 {/* imagem */}
 
                 <div className="img-cadastro-freelancer"></div>
+                <ToastContainer />
             </section>
         </>
     )

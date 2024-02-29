@@ -1,6 +1,6 @@
 // import React from 'react';
 
-import {Menu, Menu2} from "../componentes/menu-lateral";
+import { Menu2} from "../componentes/menu-lateral";
 import {Perfil} from "../componentes/perfil";
 import { Servico3 } from "../componentes/servicos";
 import { useState, useEffect } from 'react';
@@ -41,7 +41,7 @@ import "../css/global.css";
         <Perfil />
 
         <div className="btn-service-mm">
-        <button className="btn-cadastrar-demanda btn-demanda">Cadastrar demanda</button>
+        <a href="/MicroEmpreendedor/CadastrarDemanda"> <button className="btn-cadastrar-demanda btn-demanda"  >Cadastrar demanda</button></a>
         <button className="btn-cadastrar-demanda btn-desfazer" onClick={desfazerPostagem}>Desfazer demanda</button>
         </div>
         <div className="conteudo-servicos">

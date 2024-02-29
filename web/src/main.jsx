@@ -18,10 +18,8 @@ import ReactDOM from 'react-dom/client'
 //   </React.StrictMode>
 // )
 
- import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
-
+import CadastrarDemanda from './pages/CadastroDemanda.jsx';
 //===================CONFIGURANDO ROUTER======================//
 // import App from './App.jsx';
 import Institucional from "./pages/conecti.jsx";
@@ -36,9 +34,14 @@ import { CadastroMicro, CadastroMicro2, CadastroFree, CadastroFree2 } from './pa
 import EscolhaCadastro from './pages/escolha.jsx';
 import ServiceMicroo from './pages/serviceMicro.jsx';
 import { WorkspaceMicro } from './pages/workspaceMicro.jsx';
+<<<<<<< HEAD
 import { PerfilF } from './pages/Perfil.jsx';
 import PerfilMicro from './pages/PerfilMicroEmpreendedor.jsx';
 import CadastrarDemanda from './pages/CadastroDemanda.jsx';
+=======
+ import { PerfilF } from './pages/Perfil.jsx';
+ import PerfilMicro from './pages/PerfilMicroEmpreendedor.jsx';
+>>>>>>> d12416ff821bb0c2ab8fd7306de88ba120aea5bc
 
 
 const router = createBrowserRouter([
@@ -97,7 +100,8 @@ const router = createBrowserRouter([
   {
     path: "/escolha",
     element: <EscolhaCadastro />,
-  }, {
+  }, 
+  {
     path: "/freelancer/perfil",
     element: <PerfilF />,
   },
@@ -106,10 +110,16 @@ const router = createBrowserRouter([
     element: <PerfilMicro />,
   },
   {
+<<<<<<< HEAD
     path: "/microempreendedor/cadastrarDemanda",
     element: <CadastrarDemanda />,
   },
   
+=======
+    path: "/MicroEmpreendedor/CadastrarDemanda",
+    element: <CadastrarDemanda />,
+  },
+>>>>>>> d12416ff821bb0c2ab8fd7306de88ba120aea5bc
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
