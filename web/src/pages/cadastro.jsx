@@ -118,6 +118,7 @@ export function CadastroFree(){
     
                <div className="img-cadastro"></div>
         </section>
+        
         </>
     )
 }

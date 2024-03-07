@@ -2,7 +2,7 @@
  import "../css/global.css";
 //  import { ServicoJS } from "../js/service";
 
-export function Servico1({ titulo, descricao, valor, dataInicio }){
+export function Servico1({ titulo, descricao, onAceitar,   valor, dataInicio }){
   return (
       <>
        <div className="containerServices">
@@ -14,8 +14,8 @@ export function Servico1({ titulo, descricao, valor, dataInicio }){
           </div>
 
           <h3 className="valor-servico">R${valor},00</h3>
-          <button className="option optt">Aceitar</button>
-          <button className="option optt2">Recusar</button>
+          <button className="option optt" onClick={onAceitar}>Aceitar</button>
+          {/* <button className="option optt2">Recusar</button> */}
           {/* <button className="option recuse">Recusar</button> */}
 
           <div className="time-servico">
