@@ -38,11 +38,12 @@
 }
 
 .optt{
-    background: #215683;
+    background: #05ac2c;
     color: #fff;
     margin-top: 6.5%;
     margin-left: 69%;
     width: 10%;
+    cursor: pointer;
 }
 .optt2{
     background: #215683;

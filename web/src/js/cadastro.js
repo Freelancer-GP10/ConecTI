@@ -7,9 +7,6 @@ export function cadastrarFree(){
     const emailinput = document.getElementById('emailFree').value;
     const senhainput = document.getElementById('senhaFree').value;
     const senhainput2 = document.getElementById('senhaFree2').value;
- 
-    
-
     if(senhainput == senhainput2){
         
     var dados =
@@ -26,7 +23,6 @@ export function cadastrarFree(){
         console.log(response.data);
         console.log(response.token);
         console.log(response.data.token);
-        sessionStorage.setItem("token",response.data.token);
         // redirecione para tela de login
         alert("Cadastro previo feito com sucesso")
         // redirecione para o login
@@ -112,10 +108,9 @@ export function cadastroMicro1(){
             console.log(response.data);
             console.log(response.token);
             console.log(response.data.token);
-            sessionStorage.setItem("token",response.data.token);
             toast.success("Cadastro efetuado com sucesso",{ autoClose: 2000 });
         setTimeout(() => {
-            window.location.href = "/microempreendedor/workspace";
+            window.location.href = "/login";
           }, 2000);
         })
         .catch((error)=>{
