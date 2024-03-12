@@ -8,12 +8,14 @@ import "../css/img.css";
 
 // Componentes
     import { CardPay, CardService, CardWorkspace, PlaneBasic, PlanePremium, PlaneUltra } from "../componentes/cards";
-import { Footer } from "../componentes/footer";
+    import { Footer } from "../componentes/footer";
+    import { StilizationsHome } from "../componentes/stilization";
 
 function Institucional(){
     return(
         <>
             <div className="container-home">
+            <StilizationsHome />
                 <div className="background-home">
                     <div className="nav-home">
                         <div className="logo-home">

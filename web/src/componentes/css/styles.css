@@ -1,0 +1,88 @@
+.background_circle{
+    background-color: #2aa1b950;
+    height: 80vh;
+    width: 50%;
+    border-radius: 50%;
+    opacity: 50%;
+    filter: blur(60px);
+
+    position: absolute;
+    top: 110%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.background_circle_midle{
+    background-color: #2AA0B9;
+    height: 80vh;
+    width: 60%;
+    border-radius: 50%;
+    opacity: 50%;
+    filter: blur(60px);
+
+    position: absolute;
+    top: 290%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.background_circle_end{
+    background-color: #2AA0B9;
+    height: 80vh;
+    width: 60%;
+    border-radius: 50%;
+    opacity: 50%;
+    filter: blur(60px);
+
+    position: absolute;
+    top: 440%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.background_square{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 164%;
+    left: -8%;
+    /* transform: translate(-50%, -50%); */
+    z-index: -1;
+    opacity: 50%;
+}
+
+.square1{
+    height:40vh;
+    width: 20%;
+    border: 3px solid #6BE7ED;
+
+    transform: rotate(33deg);
+}
+.square2{
+    height:40vh;
+    width: 20%;
+    border: 3px solid #204A7B;
+
+    transform: rotate(33deg);
+    margin-left: 10%;
+    margin-top: -30%;
+}
+.square3{
+    height:40vh;
+    width: 20%;
+    border: 3px solid #6BE7ED;
+
+    transform: rotate(33deg);
+    margin-top: -12%;
+}
+.square4{
+    height:40vh;
+    width: 20%;
+    border: 3px solid #204A7B;
+
+    transform: rotate(33deg);
+    margin-left: 10%;
+    margin-top: -10%;
+}

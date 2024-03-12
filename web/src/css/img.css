@@ -13,7 +13,9 @@
 /* Logos */
 .logo-home img{
     width: 100%;
-    height: 11vh;
+    height: 15vh;
+
+    /* margin-top: 2%; */
 }
 
 .img-logo-cadastro{

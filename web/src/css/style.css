@@ -4,10 +4,18 @@
     justify-content: center;
     align-items: center;
 } */
+.container-home{
+    min-height: 100vh;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
 
 .background-home{
     display: flex;
     flex-direction: column;
+
+    align-items: center;
 }
 
 .nav-home{
@@ -16,10 +24,8 @@
 
     width: 80%;
     margin-top: 3%;
-    margin-left: 10%;
-    padding: 0;
 
-    justify-content: space-around;
+    padding: 0;
     align-items: center;
 }
 
@@ -36,7 +42,8 @@
     display: flex;
     justify-content: space-between;
 
-    width: 70%;
+    width: 60%;
+    margin-left: 20%;
 }
 .ul-home li{
     list-style-type: none;
@@ -47,13 +54,14 @@
     display: flex;
     width: 50%;
     height: 4vh;
+    margin-left: 50%;
     padding: 22px 18px;
     justify-content: center;
     align-items: center;
 
     border-radius: 6px;
-    border: 2px solid #215683;
-    background-color: transparent;
+    border: none;
+    background-color: #215683;
 
 
     color: #fff;
@@ -63,10 +71,13 @@
     font-weight: 400;
     line-height: bold;
     cursor: pointer;
+
+    transition: all 0.5s;
 }
 .button-home:hover{
-    border: 2px solid #215683;
-    background-color: #215683;
+    border: none;
+    background-color: #205685c7;
+
 
     color: #fff;
 }
@@ -74,11 +85,9 @@
 .slogan-home{
     display: flex;
     flex-direction: column;
-
     align-items: center;
 
     width: 40%;
-    margin-left: 30%;
     margin-top: 12%;
 }
 

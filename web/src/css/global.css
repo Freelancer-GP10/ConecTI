@@ -3,11 +3,14 @@
 body{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
 
     font-family: Oxanium;
     background-color: #fdfdfd;
     overflow-x: hidden;
     overflow-y: visible;
+
 }
 a{
     text-decoration: none;
@@ -23,7 +26,7 @@ a{
     color: #FFF;
     text-align: center;
     font-family: Oxanium;
-    font-size: 80px;
+    font-size: 90px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -84,9 +87,21 @@ a{
     color: #FFF;
     text-align: center;
     font-family: Oxanium;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 200;
+    line-height: normal;
+
+    margin-top: -4%;
+    margin-left: 7%;
+}
+.p-slogan-marca-home{
+    color: #000;
+    text-align: center;
+    font-family: Oxanium;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
 }
 .p-12{
