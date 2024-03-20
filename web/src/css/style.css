@@ -53,7 +53,7 @@
 
     border-radius: 6px;
     border: 2px solid #215683;
-    background-color: transparent;
+    background-color: #215683;
 
 
     color: #fff;
@@ -62,11 +62,13 @@
     font-style: bold;
     font-weight: 400;
     line-height: bold;
+
+    transition: background-color 0.20s ease;
     cursor: pointer;
 }
 .button-home:hover{
-    border: 2px solid #215683;
-    background-color: #215683;
+    border: 2px solid #1d4f77;
+    background-color: #1d4f77;
 
     color: #fff;
 }

@@ -1,0 +1,23 @@
+.circle {
+    width: 60%;
+    height: 60vh;
+    background-color: rgba(0, 0, 255, 0.219);
+    border-radius: 50%;
+    filter: blur(90px);
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.circleOne{
+    top: 110%;
+    left: 90%;
+}
+.circleTwo{
+    top: 300%;
+}
+.circleTree{
+    top: 430%;
+    left: 90%;
+}

@@ -9,10 +9,12 @@ import "../css/img.css";
 // Componentes
     import { CardPay, CardService, CardWorkspace, PlaneBasic, PlanePremium, PlaneUltra } from "../componentes/cards";
 import { Footer } from "../componentes/footer";
+import { CircleHome } from "../componentes/circle";
 
 function Institucional(){
     return(
         <>
+        <CircleHome />
             <div className="container-home">
                 <div className="background-home">
                     <div className="nav-home">
