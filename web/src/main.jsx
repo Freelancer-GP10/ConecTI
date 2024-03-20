@@ -18,7 +18,6 @@ import ReactDOM from 'react-dom/client'
 //   </React.StrictMode>
 // )
 
- import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
