@@ -1,0 +1,179 @@
+/* body {
+  background-color: #024F60;
+} */
+
+.App {
+  text-align: center;
+  /* max-width: 728px; */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* header do chat */
+.App header {
+  background-color: #181717;
+  height: 15vh;
+  /* min-height: 50px; */
+  color: rgb(255, 255, 255);
+  position: fixed;
+  width: 50%;
+  /* max-width: 728px; */
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  width: 50%;
+  background-color: white;
+}
+
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra de rolagem chat */
+main::-webkit-scrollbar {
+  width: 1.45rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1f241e;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #215683;
+}
+
+/* Input das msgs */
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: #BAD6ED;
+  width: 50%;
+  /* max-width: 728px; */
+  display: flex;
+  font-size: 1.5rem;
+}
+
+form button {
+  width: 20%;
+  background-color: rgb(56, 56, 143);
+}
+
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: #BAD6ED;
+  color: #215683;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+button {
+  color: #ffffff;
+  background: #215683;
+  max-width: 400px;
+  font-family: Oxanium;
+  cursor: pointer;
+  border-radius: 6px;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.sign-in {
+  color: #ffffff;
+  background: #215683;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Oxanium;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 255px;
+}
+
+ul, li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  max-width: 80%; 
+  margin-bottom: 10px; 
+}
+
+
+.sent {
+   justify-content: flex-start;
+}
+
+.sent p {
+  color: white;
+  background: #024F60;
+  align-self: flex-end;
+  max-width: 70%; 
+  word-wrap: break-word;
+}
+.received p {
+  background: #BAD6ED;
+  color: black;
+  max-width: 70%; 
+  word-wrap: break-word; 
+}
+
+.received {
+  justify-content: flex-end; 
+  margin-left: 170px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
