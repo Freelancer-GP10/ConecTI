@@ -94,10 +94,10 @@ const router = createBrowserRouter([
     path: "/escolha",
     element: <EscolhaCadastro />,
   },
-  {
-    path: "/chat",
-    element: <Chat />,
-  },
+  // {
+  //   path: "/chat",
+  //   element: <Chat />,
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
