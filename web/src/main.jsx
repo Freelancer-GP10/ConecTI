@@ -29,7 +29,6 @@ import Login from "./pages/login.jsx";
 import Pay from "./pages/pay.jsx";
 import Service from "./pages/service.jsx";
 import Workspace from "./pages/workspace.jsx";
-
 import { CadastroMicro, CadastroMicro2, CadastroFree, CadastroFree2 } from './pages/cadastro.jsx';
 import EscolhaCadastro from './pages/escolha.jsx';
 import ServiceMicroo from './pages/serviceMicro.jsx';
