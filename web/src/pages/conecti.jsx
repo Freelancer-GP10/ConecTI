@@ -10,7 +10,7 @@ import "../css/img.css";
     import { CardPay, CardService, CardWorkspace, PlaneBasic, PlanePremium, PlaneUltra } from "../componentes/cards";
     import { Footer } from "../componentes/footer";
     import { StilizationsHome } from "../componentes/stilization";
-import { Footer } from "../componentes/footer";
+//import { Footer } from "../componentes/footer";
 import { CircleHome } from "../componentes/circle";
 
 function Institucional(){

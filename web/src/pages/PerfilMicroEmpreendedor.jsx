@@ -2,8 +2,8 @@ import "../css/perfil.css";
 import "../css/global.css";
 import instace from "../js/instance";
 import atualizarMicro from "../js/atualizarEmpresa";
-import React, { useState, useEffect } from 'react';
-import { Menu, Menu2 } from "../componentes/menu-lateral";
+import { useState, useEffect } from 'react';
+import {  Menu2 } from "../componentes/menu-lateral";
 import editicon from "../assets/edit.png"
 import deletarFreelancer from "../js/deletarFreelancer";
 
