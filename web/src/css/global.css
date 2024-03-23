@@ -18,7 +18,7 @@ a{
     width: 80%;
 }
 .a_institu{
-    width: 20%;
+    width: auto;
 }
 
 /* Textos */
@@ -40,7 +40,7 @@ a{
     font-family: Oxanium;
     font-size: 45px;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 400;
     line-height: normal;
 
     padding: 0;
@@ -94,9 +94,9 @@ a{
 
     margin-top: -5%;
 }
-.p-12{
+.p-14{
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
 }
 .p-14-azul{
     color: #215683;
@@ -108,9 +108,9 @@ a{
     color: #7dafdb;
     font-size: 14px;
 }
-.h2-16{
+.h2-18{
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
 }
 .h2-subtitulo2{
     color: #FFF;

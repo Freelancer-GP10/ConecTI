@@ -1,6 +1,10 @@
 import "./css/cards.css";
 // import "./css/global.css";
 
+// icons
+import iconX from '../assets/icons/icon-x.png';
+import iconCheck from "../assets/icons/icon-chack.png"
+
 // export function CardWokspace(){
 //     return(
 //         <>
@@ -66,11 +70,26 @@ export function PlaneBasic(){
             <div className="card-padrao-plano">
                 <h3 className="h3-card-plane">Basic</h3>
                 <div className="p-card">
-                <p className="p-card-plane">Acesso ao workspace, services e pay</p>
-                <p className="p-card-plane">2 Avaliações mensais de portifolio</p>
-                <p className="p-card-plane">Avaliação mais rápida de portifólio</p>
-                <p className="p-card-plane">Prioridade na indicação para empresas / microempreendedores</p>
-                <p className="p-card-plane">Acesso a um email com cursos da alura</p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        Acesso ao workspace, services e pay
+                    </p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        2 Avaliações mensais de portifolio
+                    </p>
+                    <p className="p-card-plane">
+                        <img src={iconX} alt="Icon Check" className="icon" />
+                        Avaliação mais rápida de portifólio
+                        </p>
+                    <p className="p-card-plane">
+                        <img src={iconX} alt="Icon Check" className="icon" />
+                        Prioridade na indicação para empresas / microempreendedores
+                        </p>
+                    <p className="p-card-plane">
+                        <img src={iconX} alt="Icon Check" className="icon" />
+                        Acesso a um email com cursos da alura
+                        </p>
                 </div>
             </div>
         </>
@@ -83,11 +102,26 @@ export function PlanePremium(){
             <div className="card-padrao-plano">
             <h3 className="h3-card-plane">Premium</h3>
                 <div className="p-card">
-                    <p className="p-card-plane">Acesso ao workspace, services e pay</p>
-                    <p className="p-card-plane">2 Avaliações mensais de portifolio</p>
-                    <p className="p-card-plane">Avaliação mais rápida de portifólio</p>
-                    <p className="p-card-plane">Prioridade na indicação para empresas / microempreendedores</p>
-                    <p className="p-card-plane">Acesso a um email com cursos da alura</p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        Acesso ao workspace, services e pay
+                    </p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        2 Avaliações mensais de portifolio
+                    </p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        Avaliação mais rápida de portifólio
+                        </p>
+                    <p className="p-card-plane">
+                        <img src={iconX} alt="Icon Check" className="icon" />
+                        Prioridade na indicação para empresas / microempreendedores
+                        </p>
+                    <p className="p-card-plane">
+                        <img src={iconX} alt="Icon Check" className="icon" />
+                        Acesso a um email com cursos da alura
+                        </p>
                 </div>
             </div>
         </>
@@ -99,12 +133,27 @@ export function PlaneUltra(){
         <>
             <div className="card-padrao-plano">
             <h3 className="h3-card-plane">Ultra</h3>
-                <div className="p-card">
-                    <p className="p-card-plane">Acesso ao workspace, services e pay</p>
-                    <p className="p-card-plane">2 Avaliações mensais de portifolio</p>
-                    <p className="p-card-plane">Avaliação mais rápida de portifólio</p>
-                    <p className="p-card-plane">Prioridade na indicação para empresas / microempreendedores</p>
-                    <p className="p-card-plane">Acesso a um email com cursos da alura</p>
+            <div className="p-card">
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        Acesso ao workspace, services e pay
+                    </p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        2 Avaliações mensais de portifolio
+                    </p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        Avaliação mais rápida de portifólio
+                        </p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        Prioridade na indicação para empresas / microempreendedores
+                        </p>
+                    <p className="p-card-plane">
+                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        Acesso a um email com cursos da alura
+                        </p>
                 </div>
             </div>
         </>

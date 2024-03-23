@@ -1,0 +1,67 @@
+.carousel {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 15%;
+  }
+  
+  .main-item-container {
+    width: 80%;
+    height: 80vh; /* Altura relativa à altura da viewport */
+    /* background-color: red; Apenas para fins de visualização */
+    position: relative;
+    margin-top: 16%; /* Margem superior para centralizar */
+
+    /* Adicione estas propriedades para centralizar a imagem verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 122%;
+    /* object-fit: cover; */
+    transition: transform 0.5s ease-in-out;
+    
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-box {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  
+  .text-item:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+
+  }
+  
+  .text-item.active {
+    background-color: #133450;
+    color: #fff;
+    height: 25vh;
+    width: 50vh;
+
+    border-radius: 8px;
+
+    padding: 1px 1px;/* Cor do texto do componente ativo */
+  }
+
+  .text-item.active p{
+    color: #fff;
+  }
+  .text-item.active h3{
+    color: #fff;
+  }
+  

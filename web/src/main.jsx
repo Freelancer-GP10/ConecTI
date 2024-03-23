@@ -19,7 +19,7 @@ import ReactDOM from 'react-dom/client'
 // )
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import CadastrarDemanda from './pages/CadastroDemanda.jsx';
+//import CadastrarDemanda from './pages/CadastroDemanda.jsx';
 //===================CONFIGURANDO ROUTER======================//
 // import App from './App.jsx';
 import Institucional from "./pages/conecti.jsx";
