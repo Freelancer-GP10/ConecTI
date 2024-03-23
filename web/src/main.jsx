@@ -29,12 +29,11 @@ import Login from "./pages/login.jsx";
 import Pay from "./pages/pay.jsx";
 import Service from "./pages/service.jsx";
 import Workspace from "./pages/workspace.jsx";
-
 import { CadastroMicro, CadastroMicro2, CadastroFree, CadastroFree2 } from './pages/cadastro.jsx';
 import EscolhaCadastro from './pages/escolha.jsx';
 import ServiceMicroo from './pages/serviceMicro.jsx';
 import { WorkspaceMicro } from './pages/workspaceMicro.jsx';
-import Chat from './pages/Chat.jsx';
+// import Chat from './pages/Chat.jsx';
 
 
 const router = createBrowserRouter([
@@ -94,10 +93,10 @@ const router = createBrowserRouter([
     path: "/escolha",
     element: <EscolhaCadastro />,
   },
-  {
-    path: "/chat",
-    element: <Chat />,
-  },
+  // {
+  //   path: "/chat",
+  //   element: <Chat />,
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

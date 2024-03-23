@@ -3,7 +3,7 @@ import "../css/global.css";
 import { Menu } from "../componentes/menu-lateral";
 import editicon from "../assets/edit.png"
 import instace from "../js/instance";
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import deletarFreelancer from "../js/deletarFreelancer";
 import atualizarDados from "../js/atualizarFreelancer";
 import baixarPortifolio from "../js/portifolioFreelancer";
