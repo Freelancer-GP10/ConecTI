@@ -5,6 +5,8 @@ import logopreta from '../assets/logo/logo.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import instace from '../js/instance';
+import React from 'react';
+
 
 function Login() {
   const handleSubmit = async (e) => {
