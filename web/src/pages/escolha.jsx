@@ -9,6 +9,7 @@ import "../css/escolha.css";
 
   return (
     <>
+    <div className="background-escolha">
         <a href="./">
           <img src={logoimg} alt="" className="img-logo" />
         </a>
@@ -24,6 +25,7 @@ import "../css/escolha.css";
           </div>
 
 
+        </div>
         </div>
 
     </>

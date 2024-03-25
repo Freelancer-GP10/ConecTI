@@ -34,7 +34,7 @@ export function CadastroMicro(){
                            <input className="input-cadastro" type="password" id="senhaMicro2" placeholder="Confirmar Senha" />
                        </form>
     
-                       <button className="btn-padrao" id="button" onClick={cadastroMicro1} >Prosseguir</button>
+                       <button className="btn-padrao" id="button" onClick={cadastroMicro1} >Cadastrar</button>
                    </div>
             </div>
     
@@ -79,7 +79,7 @@ export function CadastroMicro2(){
                             <input className="input-cadastro-metade" type="text" id="telefone" placeholder="Telefone" />
                         </form>
 
-                        <button className="btn-padrao" id="button" type="button" /*onClick={cadastroMicroFinal}*/>Cadastrar</button>
+                        <button className="btn-padrao" id="button" type="button" /*onClick={cadastroMicroFinal}*/>Finalizar cadastro</button>
                     </div>
                 </div>
             </section>
@@ -112,7 +112,7 @@ export function CadastroFree(){
                            <input className="input-cadastro" type="password" id="senhaFree2" placeholder="Confirmar Senha" />
                        </form>
     
-                       <button className="btn-padrao" id="button" onClick={cadastrarFree}>Prosseguir</button>
+                       <button className="btn-padrao" id="button" onClick={cadastrarFree}>Cadastrar</button>
                    </div>
             </div>
     
@@ -209,7 +209,7 @@ export function CadastroFree2(){
 
                         </form>
 
-                        <button className="btn-padrao" id="button" onClick={cadastroFree2}>Cadastrar</button>
+                        <button className="btn-padrao" id="button" onClick={cadastroFree2}>Finalizar Cadastro</button>
                     </div>
                 </div>
 

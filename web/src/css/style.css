@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
 } */
+.a-nav{
+    width: auto;
+}
 .container-home{
     min-height: 100vh;
     -webkit-user-select: none; /* Safari */

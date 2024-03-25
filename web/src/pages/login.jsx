@@ -83,9 +83,9 @@ function Login() {
         </a>
 
         <div className="form2">
-          <h1>Faça seu Login!</h1>
-          <h2>
-            Não possui cadastro? <a href="/escolha">Cadastre-se</a>
+          <h1 className='h1-login'>Faça seu Login!</h1>
+          <h2 className='h2-login'>
+            Não possui cadastro? <a className='a-login' href="/escolha">Cadastre-se</a>
           </h2>
 
           <div className="infor">

@@ -8,6 +8,10 @@
     mix-blend-mode: color-dodge;
 }
 
+.position{
+    margin-top: 20%;
+}
+
 .back{
     margin-top: 90%;
 }
@@ -36,7 +40,7 @@ font-family: Oxanium;
     margin-left: 40%;
 }
 .logo-branca-menu img{
-    width: 100%;
+    width: auto;
     height: 12vh;
 }
 .position{
@@ -88,7 +92,8 @@ font-family: Oxanium;
     gap: 20px
 }
 .logOff{
-    margin-top: 80%;
+    margin-top: 120%;
+    margin-left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -25,10 +25,10 @@ function Institucional(){
                         </div>
                         <div className="navbar-home">
                             <ul className="ul-home">
-                                <li>Sobre nos</li>
-                                <li>Serviço</li>
-                                <li>Nossos Planos</li>
-                                <li>Contato</li>
+                                <a className="a-nav" href="#about"><li>Sobre nos</li></a>
+                                <a className="a-nav" href="#service"><li>Serviço</li></a>
+                                <a className="a-nav" href="#plane"><li>Nossos Planos</li></a>
+                                <a className="a-nav" href="#footer"><li>Contato</li></a>
                             </ul>
                         </div>
                         <a className="a_institu" href="http:/login"><button className="button-home">Entrar</button></a>
@@ -42,7 +42,7 @@ function Institucional(){
                     <div className="logo-slogan">
                         <img src={logo} alt="" />
                     </div>
-                    <p className="p-slogan-marca-home">
+                    <p className="p-slogan-marca-home"  id="about">
                     Nós, da ConecTI, buscamos unir profissionais <br /> Freelancers à microempreendedores, <br />
                     realizando o melhor e mais perfeito match! <br /> Para assim, realizar tarefas com eficácia e <br />
                     excelência, criando assim...
@@ -50,10 +50,10 @@ function Institucional(){
                     A química da conexão perfeita!
                     </p>
                 </div>
-                <div className="about-home">
+                <div className="about-home"  id="service">
                         <Carousel />
                 </div>
-                <div className="plane-home">
+                <div className="plane-home"  id="plane">
                     <h1 className="h1-medio">Nossos Planos</h1>
                     <div className="card-plane-home">
                         <PlaneBasic />
