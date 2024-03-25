@@ -8,7 +8,6 @@ import { cadastrarFree ,cadastroFree2} from '../js/cadastro';
 import { cadastroMicro1 } from '../js/cadastro';
 // import { cadastroFree, cadastroFree2, cadastroMicro1, cadastroMicroFinal} from "../js/cadastro";
 
-
 export function CadastroMicro(){
     return(
         <>
