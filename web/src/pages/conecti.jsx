@@ -7,16 +7,15 @@ import "../css/img.css";
     import logo from "../assets/logo/logo-grande.png";
 
 // Componentes
-    import { CardPay, CardService, CardWorkspace, PlaneBasic, PlanePremium, PlaneUltra } from "../componentes/cards";
+    import { PlaneBasic, PlanePremium, PlaneUltra } from "../componentes/cards";
     import { Footer } from "../componentes/footer";
     import { StilizationsHome } from "../componentes/stilization";
+import Carousel from "../componentes/carrossel";
 //import { Footer } from "../componentes/footer";
-import { CircleHome } from "../componentes/circle";
 
 function Institucional(){
     return(
         <>
-        <CircleHome />
             <div className="container-home">
             <StilizationsHome />
                 <div className="background-home">
@@ -52,14 +51,7 @@ function Institucional(){
                     </p>
                 </div>
                 <div className="about-home">
-                    <div className="card-about-home">
-                        <CardWorkspace />
-                        <CardService />
-                        <CardPay />
-                    </div>
-                    <div className="carrosseul-about-home">
-                        <div className="divTeste"></div>
-                    </div>
+                        <Carousel />
                 </div>
                 <div className="plane-home">
                     <h1 className="h1-medio">Nossos Planos</h1>

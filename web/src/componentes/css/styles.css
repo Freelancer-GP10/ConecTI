@@ -14,7 +14,7 @@
 }
 
 .background_circle_midle{
-    background-color: #2AA0B9;
+    background-color: #2aa1b950;
     height: 80vh;
     width: 60%;
     border-radius: 50%;
@@ -29,7 +29,7 @@
 }
 
 .background_circle_end{
-    background-color: #2AA0B9;
+    background-color: #2aa1b950; 
     height: 80vh;
     width: 60%;
     border-radius: 50%;
@@ -50,7 +50,7 @@
     left: -8%;
     /* transform: translate(-50%, -50%); */
     z-index: -1;
-    opacity: 50%;
+    opacity: 30%;
 }
 
 .square1{
@@ -85,4 +85,15 @@
     transform: rotate(33deg);
     margin-left: 10%;
     margin-top: -10%;
+}
+
+.background_square_two{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 300%;
+    left: 78%;
+    /* transform: translate(-50%, -50%); */
+    z-index: -1;
+    opacity: 30%;
 }

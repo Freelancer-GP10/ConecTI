@@ -16,6 +16,13 @@ export function StilizationsHome(){
             <div className="square2"></div>
             <div className="square4"></div>
         </div>
+
+        <div className="background_square_two">
+            <div className="square1"></div>
+            <div className="square3"></div>
+            <div className="square2"></div>
+            <div className="square4"></div>
+        </div>
         </>
     )
 }
