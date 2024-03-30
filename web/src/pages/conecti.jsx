@@ -10,6 +10,7 @@ import "../css/img.css";
     import { PlaneBasic, PlanePremium, PlaneUltra } from "../componentes/cards";
     import { Footer } from "../componentes/footer";
     import { StilizationsHome } from "../componentes/stilization";
+    import { Link } from "react-router-dom";
 import Carousel from "../componentes/carrossel";
 //import { Footer } from "../componentes/footer";
 
@@ -31,7 +32,7 @@ function Institucional(){
                                 <a className="a-nav" href="#footer"><li>Contato</li></a>
                             </ul>
                         </div>
-                        <a className="a_institu" href="http:/login"><button className="button-home">Entrar</button></a>
+                        <h3 className="a_institu"><Link to="/login">Entrar</Link></h3>
                     </div>
                     <div className="slogan-home">
                         <h1 className="h1-grande">ConecTI</h1>
