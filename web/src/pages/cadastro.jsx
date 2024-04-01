@@ -4,12 +4,18 @@ import "../css/global.css";
 import "../css/img.css";
 import "../css/cadastro.css";
 import imgLogo from "../assets/logo/logo.png"
-import { cadastrarFree ,cadastroFree2} from '../js/cadastro';
+import { cadastroFree2} from '../js/cadastro';
 import { cadastroMicro1 } from '../js/cadastro';
+import { Link, useNavigate } from 'react-router-dom';
+import instace from '../js/instance';
 // import { cadastroFree, cadastroFree2, cadastroMicro1, cadastroMicroFinal} from "../js/cadastro";
 
 
 export function CadastroMicro(){
+    const navigate = useNavigate();
+    const goToHome = () =>{
+        navigate('/')
+      }
     return(
         <>
         {/* <div className="backGradient"></div> */}
@@ -20,7 +26,7 @@ export function CadastroMicro(){
 
                     {/* <img src={imgLogo} alt="" /> */}
                     <div className="img-logo-cadastro">
-                    <a href="./"> <img src={imgLogo} alt="ConecTI" /></a>
+                     <img src={imgLogo} alt="ConecTI" onClick={goToHome}/>
                     </div>
     
                    <div className="form">
@@ -59,7 +65,7 @@ export function CadastroMicro2(){
                 <div className="container">
 
                 <div className="img-logo-cadastro-esquerdo">
-                    <a href="./"> <img src={imgLogo} alt="ConecTI" /></a>
+                    <img src={imgLogo} alt="ConecTI" />
                 </div>
 
 
@@ -88,6 +94,56 @@ export function CadastroMicro2(){
 }
 
 export function CadastroFree(){
+    console.log("aaa1");
+    const navigate = useNavigate();
+    const goToHome = () =>{
+        navigate('/')
+    }
+    const goToLogin = () =>{
+        navigate('/login')
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+      sessionStorage.removeItem("token")
+      const emailinput = document.getElementById('emailFree').value;
+      const senhainput = document.getElementById('senhaFree').value;
+      const senhainput2 = document.getElementById('senhaFree2').value;
+      if(senhainput == senhainput2){
+          
+      var dados =
+      {
+          senha:senhainput,
+          email:emailinput,
+          papel:"Freelancer"
+      }
+     
+      console.log(dados.papel);
+      instace.post("/usuarios",dados)
+      .then((response)=>{
+          console.log("Login deu certo");
+          console.log(response.data);
+          console.log(response.token);
+          console.log(response.data.token);
+          // redirecione para tela de login
+          alert("Cadastro previo feito com sucesso")
+          // redirecione para o login
+          // window.location.href = "/login";
+        //   navigate("/login")
+        goToLogin()
+      
+          // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
+      })
+      .catch((error)=>{
+          console.log("Deu erro");
+          console.log(error);
+      })
+  
+  }else{
+      alert("Dados invalidos!!")
+  }
+};
     return (
         <>
         {/* <div className="backGradient"></div> */}
@@ -98,21 +154,22 @@ export function CadastroFree(){
 
                     {/* <img src={imgLogo} alt="" /> */}
                     <div className="img-logo-cadastro">
-                    <a href="./"> <img src={imgLogo} alt="ConecTI" /></a>
+                    <img src={imgLogo} alt="ConecTI" onClick={goToHome}/>
                     </div>
     
                    <div className="form">
                        <h2 className="h2-grande-titulo">Faça <br></br>seu registro!</h2>
     
-                       <p className="p-14-azul">Já possui Cadastro? <a className="a-14-azul" href="./Login">Login</a></p>
+                       <p className="p-14-azul">Já possui Cadastro? <Link className="a-14-azul" onClick={goToLogin}>Login</Link></p>
     
-                       <form className="form-cadastro-free" action="">
+                       <form className="form-cadastro-free" onSubmit={handleSubmit}>
                            <input className="input-cadastro" type="text" id="emailFree" placeholder="E-mail" />
                            <input className="input-cadastro" type="password" id="senhaFree" placeholder="Crie uma senha" />
                            <input className="input-cadastro" type="password" id="senhaFree2" placeholder="Confirmar Senha" />
+                       
+                           <button className="btn-padrao" id="button" type='submit'>Cadastrar</button>
                        </form>
-    
-                       <button className="btn-padrao" id="button" onClick={cadastrarFree}>Cadastrar</button>
+                      
                    </div>
             </div>
     
@@ -122,6 +179,7 @@ export function CadastroFree(){
         </>
     )
 }
+
 export function CadastroFree2(){
     return(
         <>
@@ -134,7 +192,7 @@ export function CadastroFree2(){
 
                     {/* <a href="./main"><img className="imgLogo" src={imgLogo} alt="ConecTI" /></a> */}
                     <div className="img-logo-cadastro">
-                    <a href="./"> <img src={imgLogo} alt="ConecTI" /></a>
+                    <img src={imgLogo} alt="ConecTI" />
                     </div>
 
 

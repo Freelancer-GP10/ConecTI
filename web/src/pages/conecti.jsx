@@ -11,9 +11,13 @@ import "../css/img.css";
     import { Footer } from "../componentes/footer";
     import { StilizationsHome } from "../componentes/stilization";
 import Carousel from "../componentes/carrossel";
-//import { Footer } from "../componentes/footer";
+import { useNavigate } from "react-router-dom";
 
 function Institucional(){
+    const navigate = useNavigate();
+    const goToLoginPage = () => {
+        navigate('/login');
+    }
     return(
         <>
             <div className="container-home">
@@ -31,7 +35,7 @@ function Institucional(){
                                 <a className="a-nav" href="#footer"><li>Contato</li></a>
                             </ul>
                         </div>
-                        <a className="a_institu" href="http:/login"><button className="button-home">Entrar</button></a>
+                        <button onClick={goToLoginPage} className="button-home">Entrar</button>
                     </div>
                     <div className="slogan-home">
                         <h1 className="h1-grande">ConecTI</h1>

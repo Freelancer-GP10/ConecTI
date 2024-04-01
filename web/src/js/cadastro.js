@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import instace from "./instance";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export function cadastrarFree(){
+    const navigate = useNavigate();
+
     sessionStorage.removeItem("token")
     const emailinput = document.getElementById('emailFree').value;
     const senhainput = document.getElementById('senhaFree').value;
@@ -26,7 +29,8 @@ export function cadastrarFree(){
         // redirecione para tela de login
         alert("Cadastro previo feito com sucesso")
         // redirecione para o login
-        window.location.href = "/login";
+        // window.location.href = "/login";
+        navigate("/login")
     
         // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
     })
@@ -41,7 +45,7 @@ export function cadastrarFree(){
 }
 
 export function cadastroFree2(){
- 
+    // const navigate = useNavigate();
     const nomeFre = document.getElementById('nome').value;
     const sobrenomeFre = document.getElementById('sobrenome').value;
     const cpfFre = document.getElementById('cpf').value;
@@ -82,8 +86,8 @@ export function cadastroFree2(){
 }
 }
 
-
 export function cadastroMicro1(){
+
     sessionStorage.removeItem("token")
     const emailinput = document.getElementById("emailMicro").value;
     const senhainput = document.getElementById("senhaMicro").value;
@@ -122,6 +126,7 @@ export function cadastroMicro1(){
         toast.error("Erro ao cadastrar ");
     }
 }
+
 export function buscarCep(){
     const cepMicro = document.getElementById('cep').value
 
