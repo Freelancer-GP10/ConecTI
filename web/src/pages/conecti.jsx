@@ -39,8 +39,6 @@ function Institucional(){
 
                         <button onClick={goToLoginPage} className="button-home">Entrar</button>
 
-                        <h3 className="a_institu"><Link to="/login">Entrar</Link></h3>
-
                     </div>
                     <div className="slogan-home">
                         <h1 className="h1-grande">ConecTI</h1>
