@@ -8,7 +8,7 @@
 
     height: 100vh;
 }
-.background{
+.background-escolha{
     background: rgb(24,11,232);
     background: linear-gradient(49deg, rgba(24,11,232,0.3757878151260504) 21%, rgba(80,250,171,0.17970938375350143) 55%, rgba(255,255,255,1) 76%);
 
@@ -27,8 +27,11 @@
 }
 
 .img-logo{
-    margin-left: 2%;
+    margin-left: 5%;
     margin-top: 2%;
+
+    width: auto;
+    height: 20vh;
 }
 
 .cads{
@@ -97,7 +100,7 @@
     align-items: center;
 
     width: 40%;
-    margin-left: 30%;
+    margin-left: 32%;
 }
 
 .btn-choose-1{

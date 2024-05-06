@@ -34,6 +34,10 @@ import { CadastroMicro, CadastroMicro2, CadastroFree, CadastroFree2 } from './pa
 import EscolhaCadastro from './pages/escolha.jsx';
 import ServiceMicroo from './pages/serviceMicro.jsx';
 import { WorkspaceMicro } from './pages/workspaceMicro.jsx';
+import { Perfil } from './componentes/perfil.jsx';
+import PerfilMicro from './pages/PerfilMicroEmpreendedor.jsx';
+import { PerfilF } from './pages/Perfil.jsx';
+import CadastrarDemanda from './pages/CadastroDemanda.jsx';
 // import Chat from './pages/Chat.jsx';
 
 
@@ -94,6 +98,18 @@ const router = createBrowserRouter([
     path: "/escolha",
     element: <EscolhaCadastro />,
   },
+  {
+    path: "/microempreendedor/perfil",
+    element: <PerfilMicro />,
+  },
+  {
+    path: "/MicroEmpreendedor/CadastrarDemanda",
+    element: <CadastrarDemanda />,
+  },
+  {
+    path: "/freelancer/perfil",
+    element: <PerfilF />,
+  }
   // {
   //   path: "/chat",
   //   element: <Chat />,

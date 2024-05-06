@@ -76,7 +76,7 @@
 
     border-radius: 8px;
 
-    padding: 2px 2px;
+    padding: 8px 2px 2px 0px;
 }
 
 .linha_final{
@@ -113,4 +113,20 @@
     margin-left: 10%;
 }
 
+
+.ipt-cadastro-demanda{
+    background-color: transparent;
+    padding: 1px 1px 1px 8px;
+}
+.txt-cadastro-demanda{
+    background-color: transparent;
+}
+.select-cadastro-demanda-conf{
+    background-color: transparent;
+    padding: 2px 1px 2px 8px;
+    width: 54%;
+}
+.ajust-altura{
+    margin-top: 2%;
+}
 

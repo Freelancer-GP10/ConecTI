@@ -1,13 +1,25 @@
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import instace from '../js/instance';
+import { Link, useNavigate } from 'react-router-dom';
+
 import '../css/login.css';
 import '../css/global.css';
 import fundologin from '../assets/backgroundTec.png';
 import logopreta from '../assets/logo/logo.png';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import instace from '../js/instance';
 
 
 function Login() {
+  console.log("aaaaKIOGIN");
+  const navigate = useNavigate();
+  const goToHome = () =>{
+    navigate('/')
+  }
+  const goToChooseCadastro = () =>{
+    navigate('/escolha')
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -48,15 +60,17 @@ function Login() {
               (usuarioResponse.data.nome == null ||
                 usuarioResponse.data.nome.length == 0)
             ) {
-              window.location.href =
+              navigate(
                 papel.toLowerCase() === 'freelancer'
                   ? '/cadastro-freelancer'
-                  : '/cadastro-microempreendedor';
+                  : '/cadastro-microempreendedor'
+              );
             } else {
-              window.location.href =
+              navigate(
                 papel.toLowerCase() === 'freelancer'
                   ? '/freelancer/workspace'
-                  : '../microempreendedor/workspace';
+                  : '/microempreendedor/workspace'
+              );
             }
           })
           .catch((error) => {
@@ -79,14 +93,12 @@ function Login() {
       {/* Formulario */}
 
       <div className="container2">
-        <a href="/">
-          <img className="logopreta" src={logopreta} alt="ConecTI" />
-        </a>
+          <img className="logopreta" src={logopreta} alt="ConecTI" onClick={goToHome} />
 
         <div className="form2">
-          <h1>Faça seu Login!</h1>
-          <h2>
-            Não possui cadastro? <a href="/escolha">Cadastre-se</a>
+          <h1 className='h1-login'>Faça seu Login!</h1>
+          <h2 className='h2-login'>
+            Não possui cadastro? <Link className='a-login' onClick={goToChooseCadastro}>Cadastre-se</Link>
           </h2>
 
           <div className="infor">

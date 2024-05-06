@@ -42,7 +42,7 @@ import "../css/global.css";
 
         <div className="btn-service-mm">
         <a href="/MicroEmpreendedor/CadastrarDemanda"> <button className="btn-cadastrar-demanda btn-demanda"  >Cadastrar demanda</button></a>
-        <button className="btn-cadastrar-demanda btn-desfazer" onClick={desfazerPostagem}>Desfazer demanda</button>
+        <button className="btn-cadastrar-demanda btn-desfazer" onClick={desfazerPostagem}>Desfazer</button>
         </div>
         <div className="conteudo-servicos">
             <div className="alinhamento-itens-conteudo">

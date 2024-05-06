@@ -1,4 +1,4 @@
-import { Menu } from '../componentes/menu-lateral'
+import { Menu2 } from '../componentes/menu-lateral'
 import "../css/global.css";
 import "../css/cadastroServico.css";
 import cadastrarServico from '../js/cadastroService';
@@ -6,7 +6,7 @@ import cadastrarServico from '../js/cadastroService';
   return (
 
     <>
-    <Menu />
+    <Menu2 />
     
     <h2 className="h2-grande-titulacao">Cadastrar demanda</h2>
 
@@ -16,14 +16,14 @@ import cadastrarServico from '../js/cadastroService';
         <div className='principal'>
           <div className='caixa_formulario'>
             <div className='linha_inicio'>
-              <input className='nome-cadastro-demanda' type="text" placeholder='Nome do serviço' id="nome" />
-              <p className='p-cadastro-demanda'>Data de Inicio:</p>
+              <input className='nome-cadastro-demanda ipt-cadastro-demanda' type="text" placeholder='Nome do serviço' id="nome" />
+              <p className='p-14-azul ajust-altura'>Data de Inicio:</p>
               
-              <input className='data-cadastro-demanda' type="date" placeholder='Data de início' name="" id="dataInicio" />
+              <input className='data-cadastro-demanda ipt-cadastro-demanda' type="date" placeholder='Data de início' name="" id="dataInicio" />
             </div>
 
             <div className="select-cadastro-demanda">
-              <select id="tipo"  >
+              <select id="tipo"  className='select-cadastro-demanda-conf'>
                 <option value="">Tipo de serviço</option>
                 <option value="desenvolvimentoWeb">Desenvolvimento Web</option>
                 <option value="desenvolvimentoMobile">Desenvolvimento Mobile</option>
@@ -45,14 +45,14 @@ import cadastrarServico from '../js/cadastroService';
 
 
             <div className='descicao-cadastro-demanda'>
-              <textarea name="" id="descricao" cols="30" rows="10" placeholder='Descrição'></textarea>
+              <textarea className="txt-cadastro-demanda" id="descricao" cols="30" rows="10" placeholder=' Descrição'></textarea>
             </div>
 
             <div className='linha_final'>
 
-              <input className="ipt-vlor-cadastro-demanda" type="text" id='valor' placeholder='Valor' />
-              <p className='p-cadastro-demanda'>Data final</p>
-              <input className="ipt-data-cadastro-demanda" type="date" id='prazo' placeholder='Prazo' />
+              <input className="ipt-vlor-cadastro-demanda ipt-cadastro-demanda" type="text" id='valor' placeholder='Valor' />
+              <p className='p-14-azul ajust-altura'>Data final</p>
+              <input className="ipt-data-cadastro-demanda ipt-cadastro-demanda" type="date" id='prazo' placeholder='Prazo' />
             </div>
 
 
@@ -60,15 +60,7 @@ import cadastrarServico from '../js/cadastroService';
 
           <button className='btn-padrao-cadastro' onClick={cadastrarServico}>Cadastrar serviço</button>
         
-        </div>
-          <div className='quadradros'>
-
-          <div className="quadrado4"></div>
-                    <div className="quadrado3"></div>
-                    <div className="quadrado1"></div>
-                    <div className="quadrado2"></div>
-          </div>
-        
+        </div>        
 
       </div>
     </>

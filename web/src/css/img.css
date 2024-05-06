@@ -19,15 +19,15 @@
 }
 
 .img-logo-cadastro{
-    width: 20%;
+    width: auto;
     height: 11vh;
 
     margin-left: 2%;
 
-    margin-top: 3%;
+    margin-top: 8%;
 }
 .img-logo-cadastro img{
-    width: 88%;
+    width: auto;
     height: 18vh;
 }
 

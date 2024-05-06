@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import './css/carossel.css';
+import './css/carossel.css'
 
 
 import { CardPay, CardService, CardWorkspace } from './cards';

@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
 } */
+.a-nav{
+    width: auto;
+}
 .container-home{
     min-height: 100vh;
     -webkit-user-select: none; /* Safari */
@@ -49,6 +52,7 @@
 .button-home{
     display: flex;
     width: 100%;
+    width: 10%;
     height: 4vh;
     /* margin-left: 50%; */
     padding: 22px 18px;
