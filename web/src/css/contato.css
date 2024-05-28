@@ -173,14 +173,21 @@ input, textarea{
     font-size: 120%;
 }
 
-.button_enviar{
+.button_enviar {
     margin-left: -52%;
     padding: 2.8%;
     width: 28%;
     font-size: 15px;
     font-weight: 500;
     color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
+
+}
+
+.button_enviar a{
+    color: white;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .quadrado1 {

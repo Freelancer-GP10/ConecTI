@@ -47,7 +47,7 @@ function Contato() {
               <input type="email" className='ipt_email' placeholder='E-mail' />
               <input type="tel" className='ipt_tel' placeholder='Telefone' />
               <textarea name="" id="" cols="30" rows="10" className='ipt_msg' placeholder='Mensagem'></textarea>
-              <button className='button_enviar'>Enviar</button>
+              <button className='button_enviar'> Enviar </button>
             </div>
         </div>
 

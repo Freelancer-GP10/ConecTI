@@ -1,0 +1,30 @@
+<form id="formulario">
+    <input type="email" id="emailDestinatario" placeholder="Seu e-mail">
+    <input type="text" id="phoneNumber" placeholder="Número de telefone (com código de país)">
+    <input type="text" id="message" placeholder="Sua mensagem">
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <head>
+
+  <script>
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const emailDestinatario = document.getElementById('emailDestinatario').value;
+      const phoneNumber = document.getElementById('phoneNumber').value;
+      const message = document.getElementById('message').value;
+  
+      // Enviar dados para o back-end
+      fetch('/enviar-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ emailDestinatario, phoneNumber, message })
+      })
+      .then(response => response.text())
+      .then(data => console.log(data))
+      .catch(error => console.error('Erro ao enviar dados:', error));
+    });
+  </script>
+    </head>
