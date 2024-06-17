@@ -54,6 +54,7 @@ import "../css/global.css";
                         status={"Ativo"}
                         valor={servico.valor}
                         dataInicio={formatData(servico.dataInicio)}
+                       // nomeFreelancer={servico.}
                     />
                 ))}
             </div>

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const instace = axios.create({
 
-     baseURL: '/api',
+     baseURL: 'https://conecti.sytes.net/api',
      timeout:10000,
      headers: {
           "Content-Type":"application/json",

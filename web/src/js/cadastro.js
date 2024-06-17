@@ -27,25 +27,27 @@ export function cadastrarFree(){
         console.log(response.token);
         console.log(response.data.token);
         // redirecione para tela de login
-        alert("Cadastro previo feito com sucesso")
-        // redirecione para o login
-        // window.location.href = "/login";
-        navigate("/login")
+        toast.success("Cadastro efetuado com sucesso",{ autoClose: 2000 });
+        setTimeout(() => {
+            navigate("/login")
+          }, 2000);
     
         // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
     })
     .catch((error)=>{
+        toast.error("Erro ao Cadastrar!!")
         console.log("Deu erro");
         console.log(error);
     })
 
 }else{
-    alert("Dados invalidos!!")
+    toast.error("Dados invalidos!!")
 }
 }
 
 export function cadastroFree2(){
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
+    
     const nomeFre = document.getElementById('nome').value;
     const sobrenomeFre = document.getElementById('sobrenome').value;
     const cpfFre = document.getElementById('cpf').value;
@@ -73,7 +75,7 @@ export function cadastroFree2(){
         console.log(response.data.token);
         toast.success("Cadastro efetuado com sucesso",{ autoClose: 2000 });
         setTimeout(() => {
-            window.location.href = "/freelancer/workspace";
+            navigate("/freelancer/workspace");
           }, 2000);
     })
     .catch((error)=>{
@@ -87,6 +89,7 @@ export function cadastroFree2(){
 }
 
 export function cadastroMicro1(){
+    const navigate = useNavigate();
 
     sessionStorage.removeItem("token")
     const emailinput = document.getElementById("emailMicro").value;
@@ -114,7 +117,7 @@ export function cadastroMicro1(){
             console.log(response.data.token);
             toast.success("Cadastro efetuado com sucesso",{ autoClose: 2000 });
         setTimeout(() => {
-            window.location.href = "/login";
+            navigate("/login")
           }, 2000);
         })
         .catch((error)=>{
@@ -170,16 +173,17 @@ export function cadastroMicroFinal(){
         console.log(response.token);
         console.log(response.data.token);
 
-        alert("AAAAAAAAAA")
+        toast.success("Cadastro finalizado com sucesso ", {autoClose: 2000});
         // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
     })
     .catch((error)=>{
+        toast.error("Erro ao finalizar cadastro", {autoClose: 2000});
         console.log("Deu erro");
         console.log(error);
     })
 
 }else{
-
-    alert("Dados invalidos, preencha corretamente as informações para prosseguir!!")
+    toast.error("Dados invalidos, preencha corretamente as informações para prosseguir!!", {autoClose: 2000});
+    //alert("Dados invalidos, preencha corretamente as informações para prosseguir!!")
 }
 }

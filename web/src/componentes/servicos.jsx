@@ -75,7 +75,7 @@ export function Servico3({ titulo, descricao, valor, dataInicio }){
             <p className="descicaoDemanda">{descricao}</p>
           </div>
 
-          <h3 className="valor-servico">{valor}</h3>
+          <h3 className="valor-servico">R${valor},00</h3>
           <button className="option optt">Pedente</button>
           {/* <button className="option recuse">Recusar</button> */}
 

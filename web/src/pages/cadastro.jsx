@@ -1,10 +1,10 @@
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast, useToast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "../css/global.css";
 import "../css/img.css";
 import "../css/cadastro.css";
 import imgLogo from "../assets/logo/logo.png"
-import { cadastroFree2} from '../js/cadastro';
+import { cadastrarFree, cadastroFree2} from '../js/cadastro';
 import { cadastroMicro1 } from '../js/cadastro';
 import { Link, useNavigate } from 'react-router-dom';
 import instace from '../js/instance';
@@ -68,7 +68,7 @@ export function CadastroMicro2(){
                 </div>
 
 
-                    <div className="form">
+                    <div className="form22">
 
                     <a href="cadastro-previo-empresa" className="a2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" color="#204A7B" fill="currentColor" viewBox="0 0 16 16">
@@ -93,7 +93,6 @@ export function CadastroMicro2(){
 }
 
 export function CadastroFree(){
-    console.log("aaa1");
     const navigate = useNavigate();
     const goToHome = () =>{
         navigate('/')
@@ -121,26 +120,27 @@ export function CadastroFree(){
       console.log(dados.papel);
       instace.post("/usuarios",dados)
       .then((response)=>{
-          console.log("Login deu certo");
+          console.log("cadastro efetuado com sucesso");
           console.log(response.data);
           console.log(response.token);
           console.log(response.data.token);
           // redirecione para tela de login
-          alert("Cadastro previo feito com sucesso")
-          // redirecione para o login
-          // window.location.href = "/login";
-        //   navigate("/login")
-        goToLogin()
+          toast.success("Cadastro efetuado com sucesso",{ autoClose: 2000 });
+        setTimeout(() => {
+            goToLogin()
+          }, 2000);
+        
       
           // FAZER QUALQUER ACAO REDIRECIONAR BUSCAR DADO ETC
       })
       .catch((error)=>{
+        toast.error("Erro ao Cadastrar!!",{autoClose: 2000})
           console.log("Deu erro");
           console.log(error);
       })
   
   }else{
-      alert("Dados invalidos!!")
+    toast.error("Dados invalidos!!",{autoClose: 2000})
   }
 };
     return (

@@ -18,6 +18,11 @@ section{
     width: 80%;
     margin-top: 6%;
 }
+.form22{
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 15%;
+}
 
 .form-cadastro-free{
     margin-top: 8%;
@@ -78,4 +83,7 @@ section{
 .formMicro{
     margin-top: 15%;
     margin-bottom: 5%;
+}
+.formFre2{
+    margin-top: 8%;
 }

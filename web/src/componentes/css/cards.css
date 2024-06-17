@@ -88,6 +88,7 @@
 }
 .p-card{
     width: 85%;
+    height: auto;
 }
 .p-card-plane{
     display: flex;
@@ -96,6 +97,8 @@
     text-align: left;
 
     justify-content: space-around;
+
+    margin-top: 10%;
 }
 
 .icon{
@@ -104,4 +107,8 @@
 
     margin-top: 0.5%;
     margin-right: 5%;
+}
+.icon2{
+    height: 20%;
+    width: 18%;
 }

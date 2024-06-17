@@ -68,7 +68,7 @@ export function PlaneBasic(){
     return(
         <>
             <div className="card-padrao-plano">
-                <h3 className="h3-card-plane">Basic</h3>
+                <h3 className="h3-card-plane">Basic R$29,90</h3>
                 <div className="p-card">
                     <p className="p-card-plane">
                         <img src={iconCheck} alt="Icon Check" className="icon" />
@@ -83,7 +83,7 @@ export function PlaneBasic(){
                         Avaliação mais rápida de portifólio
                         </p>
                     <p className="p-card-plane">
-                        <img src={iconX} alt="Icon Check" className="icon" />
+                        <img src={iconX} alt="Icon Check" className="icon icon2" />
                         Prioridade na indicação para empresas / microempreendedores
                         </p>
                     <p className="p-card-plane">
@@ -100,7 +100,7 @@ export function PlanePremium(){
     return(
         <>
             <div className="card-padrao-plano">
-            <h3 className="h3-card-plane">Premium</h3>
+            <h3 className="h3-card-plane">Premium R$59,90</h3>
                 <div className="p-card">
                     <p className="p-card-plane">
                         <img src={iconCheck} alt="Icon Check" className="icon" />
@@ -115,7 +115,7 @@ export function PlanePremium(){
                         Avaliação mais rápida de portifólio
                         </p>
                     <p className="p-card-plane">
-                        <img src={iconX} alt="Icon Check" className="icon" />
+                        <img src={iconX} alt="Icon Check" className="icon icon2" />
                         Prioridade na indicação para empresas / microempreendedores
                         </p>
                     <p className="p-card-plane">
@@ -132,7 +132,7 @@ export function PlaneUltra(){
     return(
         <>
             <div className="card-padrao-plano">
-            <h3 className="h3-card-plane">Ultra</h3>
+            <h3 className="h3-card-plane">Ultra R$99,90</h3>
             <div className="p-card">
                     <p className="p-card-plane">
                         <img src={iconCheck} alt="Icon Check" className="icon" />
@@ -147,7 +147,7 @@ export function PlaneUltra(){
                         Avaliação mais rápida de portifólio
                         </p>
                     <p className="p-card-plane">
-                        <img src={iconCheck} alt="Icon Check" className="icon" />
+                        <img src={iconCheck} alt="Icon Check" className="icon icon2" />
                         Prioridade na indicação para empresas / microempreendedores
                         </p>
                     <p className="p-card-plane">
